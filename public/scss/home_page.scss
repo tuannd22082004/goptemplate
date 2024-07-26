@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap");
+
+.feedback {
+  &__link {
+    &:before,
+    &:after {
+      position: absolute;
+      transition: all 0.35s ease;
+    }
+    &:before {
+      bottom: 0;
+      display: block;
+      height: 1px;
+      width: 0%;
+      content: "";
+      background-color: var(--primary);
+    }
+    &:after {
+      left: 0;
+      top: 0;
+      position: absolute;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+  }
+  &__image {
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.clients {
+  &__logo {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.modal {
+  &__close {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.counter .side-border-left {
+  &__left {
+    &::after {
+      content: "";
+      border-left: 1px dashed rgba(157, 157, 157, 0.2);
+      height: 400px;
+    }
+  }
+  &__right {
+    &::before {
+      content: "";
+      border-right: 1px dashed rgba(157, 157, 157, 0.2);
+      height: 400px;
+    }
+  }
+}
