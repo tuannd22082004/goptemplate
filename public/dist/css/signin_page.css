@@ -1,0 +1,9 @@
+.signin {
+  min-height: 100vh;
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+  .sign-in {
+    max-width: 220% !important;
+  }
+}
