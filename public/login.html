@@ -15,28 +15,30 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Materialdesign icons css -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="dist/css/variable.css" rel="stylesheet">
+    <link href="dist/css/global.css" rel="stylesheet">
+    <link href="dist/css/login_page.css" rel="stylesheet">
 
 </head>
 
-<body >
+<body>
 
 
-    <section class="log-in section" style="background: url(./images/log-in/bg.png) center;">
+    <section class="section login" style="background: url(./images/log-in/bg.png) center;">
         <div class="container">
-            <div class="py-5 log-content ">
+            <div class="py-5 box-shadow">
                 <div class="row">
                     <div class="col-lg-5">
-                        <!-- <div class="p-5">
+                        <div class="p-5">
                             <h2>Bussiness Start Up</h2>
-                        <h5>Welcome to the slima</h5>
+                            <h5>Welcome to the slima</h5>
                         </div>
-                         -->
                     </div>
                     <div class="col-lg-6">
                         <div class="text-center p-5">
@@ -46,7 +48,8 @@
                             <form class="login-form mt-4">
                                 <div class="col-md-12">
                                     <div class="position-relative">
-                                        <input type="text" class="form-control rounded-pill" id="validationCustom001" placeholder='Username' value="" required>
+                                        <input type="text" class="form-control  py-1 px-5  rounded-pill"
+                                            id="validationCustom001" placeholder='Username' value="" required>
                                         <div class="login-icon position-absolute top-50 translate-middle-y">
                                             <i class="mdi mdi-account ps-3 f-20"></i>
                                         </div>
@@ -58,19 +61,21 @@
 
                                 <div class="col-md-12 mt-4">
                                     <div class="position-relative">
-                                        <input type="password" class="form-control rounded-pill"  placeholder='Password' id="validationCustom005" required>
+                                        <input type="password" class="form-control  py-1 px-5 rounded-pill"
+                                            placeholder='Password' id="validationCustom005" required>
                                         <div class="login-icon position-absolute top-50 translate-middle-y">
                                             <i class="mdi mdi-lock ps-3 f-20"></i>
                                         </div>
                                         <div class="invalid-feedback">
-                                           add password.
+                                            add password.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex justify-content-between">
                                         <div class="text-start">
-                                            <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe" class="text-muted f-14">Remember me</label>
+                                            <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label
+                                                for="rememberMe" class="text-muted">Remember me</label>
                                             <div class="invalid-feedback">
                                                 accept condition!
                                             </div>
@@ -80,9 +85,9 @@
                                             <a href="" class="f-14 text-primary">Forget password?</a>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
-                               
+
                                 <button type="submit" class="btn btn-primary w-100 mt-4">Get Started <i
                                         class="mdi mdi-telegram ms-2"></i></button>
                             </form>
