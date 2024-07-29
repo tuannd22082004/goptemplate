@@ -1,0 +1,60 @@
+#cta-ani,
+#cta-footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+#cta-ani {
+  background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
+}
+
+#cta-footer {
+  background-image: url(/images/animation-image-2.png?93f9e5ccf5132283150c5bc400f78b4f);
+}
+
+.home__form {
+  bottom: -50px;
+}
+
+.review__shape {
+  top: -45%;
+  right: 0;
+}
+
+.feedback__image {
+  transition: all 2s;
+}
+.feedback__image:hover {
+  transform: scale(1.1);
+}
+.feedback__background-image {
+  background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.feedback__overlay {
+  transition: opacity 0.4s;
+}
+
+.clients__logo:hover {
+  opacity: 1;
+}
+
+.modal__close {
+  transition: all 0.3s ease-in-out;
+}
+.modal__close:hover {
+  opacity: 0.5;
+}
+
+.counter__left::after {
+  content: "";
+  border-left: 1px dashed rgba(157, 157, 157, 0.2);
+  height: 400px;
+}
+.counter__right::before {
+  content: "";
+  border-right: 1px dashed rgba(157, 157, 157, 0.2);
+  height: 400px;
+}
