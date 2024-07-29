@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap");
+
+.banner {
+  &__background {
+    z-index: -1;
+    background: rgb(34, 195, 142);
+    background: linear-gradient(
+      270deg,
+      rgba(34, 195, 142, 1) 0%,
+      rgba(245, 247, 245, 1) 100%
+    );
+    width: 40%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+.feedback {
+  &__link {
+    &:before,
+    &:after {
+      position: absolute;
+      transition: all 0.35s ease;
+    }
+    &:before {
+      bottom: 0;
+      display: block;
+      height: 1px;
+      width: 0%;
+      content: "";
+      background-color: var(--primary);
+    }
+    &:after {
+      left: 0;
+      top: 0;
+      position: absolute;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+  }
+  &__image {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 999;
+    transition: all 2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__background-image {
+    &-1 {
+      background-image: url(../images/features/home-animation.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-2 {
+      background-image: url(../images/features/home-animation-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.clients {
+  &__logo {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.modal {
+  &__close {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.review {
+  &__shape {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 0;
+  }
+}
+.counter .side-border-left {
+  &__left {
+    &::after {
+      content: "";
+      border-left: 1px dashed rgba(157, 157, 157, 0.2);
+      height: 400px;
+    }
+  }
+  &__right {
+    &::before {
+      content: "";
+      border-right: 1px dashed rgba(157, 157, 157, 0.2);
+      height: 400px;
+    }
+  }
+}
+
+#cta-ani {
+  background-image: url(../images/cta/animation-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+#cta-footer {
+  background-image: url(../images/cta/animation-image-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}

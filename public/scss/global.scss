@@ -62,7 +62,6 @@
   background-color: #ffffff !important;
 }
 .text-active {
-  color: var(--muted) !important;
   &:hover {
     color: var(--primary) !important;
   }
@@ -600,4 +599,36 @@ hr {
 
 .btn-white:hover {
   background: #ffffff !important;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  &-active {
+    opacity: 1;
+    background: #000 !important;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle !important;
+  }
+}
+#imgcontainer-1 {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -100px;
+  perspective: 30px;
+  left: -50px;
+}
+#imgcontainer-2 {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: -100px;
+  perspective: 30px;
+  right: -50px;
+}
+
+#inner-2,
+#inner-3 {
+  transition: transform 0.5s;
 }
