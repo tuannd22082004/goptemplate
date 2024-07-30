@@ -1,14 +1,30 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap);
-.banner__background {
-  z-index: -1;
-  background: rgb(34, 195, 142);
-  background: linear-gradient(270deg, rgb(34, 195, 142) 0%, rgb(245, 247, 245) 100%);
-  width: 40%;
+.banner__carousel {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-@media screen and (max-width: 991px) {
-  .banner__background {
-    width: 100%;
-  }
+.banner__carousel:nth-of-type(1) {
+  background-position: center;
+  background-image: url(/images/img-1.jpg?e7ed12dc59204abd90e068e5d369e9d8);
+}
+.banner__carousel:nth-of-type(2) {
+  background-position: bottom;
+  background-image: url(/images/img-2.jpg?1c71b638bc6e9674a0562e008fb3c9e4);
+}
+.banner__carousel:nth-of-type(3) {
+  background-position: bottom;
+  background-image: url(/images/img-3.jpg?cbde15d83134d447c7011a551931e647);
+}
+.banner__video-icon {
+  line-height: 3.5rem;
+}
+.banner .carousel-control-next-icon,
+.banner .carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  background-size: 100% 40%;
 }
 
 .feedback__link:before, .feedback__link:after {
@@ -34,10 +50,6 @@
   overflow: hidden;
 }
 .feedback__image {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  z-index: 999;
   transition: all 2s;
 }
 .feedback__image:hover {
@@ -72,13 +84,16 @@
   z-index: 0;
 }
 
-.counter .side-border-left__left::after {
-  content: "";
+.counter {
+  position: relative;
+}
+.counter__left {
+  left: 0;
   border-left: 1px dashed rgba(157, 157, 157, 0.2);
   height: 400px;
 }
-.counter .side-border-left__right::before {
-  content: "";
+.counter__right {
+  right: 0;
   border-right: 1px dashed rgba(157, 157, 157, 0.2);
   height: 400px;
 }
