@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap);
+.banner {
+  height: 100vh;
+  background-image: url(/images/home-3.png?8f2d3e9a64f92ff7f6fec6ac35996298);
+  background-position: center;
+  background-size: cover;
+}
+.banner__title {
+  font-size: 50px;
+  color: var(--dark);
+}
+.banner__overlay-image {
+  background-image: url(/images/bg-4.png?fbaf6e2e5677fade71ab39cfb25bd97c);
+  background-position: center;
+  animation: ani-bg 3s infinite alternate;
+}
+.banner__input {
+  outline: none !important;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+.banner__button {
+  top: 5px;
+  right: 6px;
+}
+
+.feedback__link:before, .feedback__link:after {
+  position: absolute;
+  transition: all 0.35s ease;
+}
+.feedback__link:before {
+  bottom: 0;
+  display: block;
+  height: 1px;
+  width: 0%;
+  content: "";
+  background-color: var(--primary);
+}
+.feedback__link:after {
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.feedback__image {
+  transition: all 2s;
+}
+.feedback__image:hover {
+  transform: scale(1.1);
+}
+.feedback__background-image-1 {
+  background-image: url(/images/features-animation.png?60e562a714bbd1a1fb98df49ba8414de);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.feedback__background-image-2 {
+  background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clients__logo:hover {
+  opacity: 1;
+}
+
+.modal__close {
+  transition: all 0.3s ease-in-out;
+}
+.modal__close:hover {
+  opacity: 0.5;
+}
+
+.review__shape {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 0;
+}
+
+.counter .side-border-left__left::after {
+  content: "";
+  border-left: 1px dashed rgba(157, 157, 157, 0.2);
+  height: 400px;
+}
+.counter .side-border-left__right::before {
+  content: "";
+  border-right: 1px dashed rgba(157, 157, 157, 0.2);
+  height: 400px;
+}
+
+#cta-ani {
+  background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+#cta-footer {
+  background-image: url(/images/animation-image-2.png?93f9e5ccf5132283150c5bc400f78b4f);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}

@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap");
-
 .banner {
-  &__background {
-    z-index: -1;
-    background: rgb(34, 195, 142);
-    background: linear-gradient(
-      270deg,
-      rgba(34, 195, 142, 1) 0%,
-      rgba(245, 247, 245, 1) 100%
-    );
-    width: 40%;
-    @media screen and (max-width: 991px) {
-      width: 100%;
-    }
+  height: 100vh;
+  background-image: url(../images/home/home-3.png);
+  background-position: center;
+  background-size: cover;
+  &__title {
+    font-size: 50px;
+    color: var(--dark);
+  }
+  &__overlay-image {
+    background-image: url(../images/home/bg-4.png);
+    background-position: center;
+    animation: ani-bg 3s infinite alternate;
+  }
+  &__input {
+    outline: none !important;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 16%);
+    background-color: #ffffff;
+  }
+  &__button {
+    top: 5px;
+    right: 6px;
   }
 }
 .feedback {
@@ -42,10 +50,6 @@
     }
   }
   &__image {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    z-index: 999;
     transition: all 2s;
     &:hover {
       transform: scale(1.1);
