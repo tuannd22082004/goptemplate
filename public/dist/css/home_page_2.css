@@ -1,40 +1,58 @@
-#cta-ani,
-#cta-footer {
+#cta-ani {
+  background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 50%;
 }
 
-#cta-ani {
-  background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
-}
-
 #cta-footer {
   background-image: url(/images/animation-image-2.png?93f9e5ccf5132283150c5bc400f78b4f);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
 }
 
 .home__form {
   bottom: -50px;
 }
 
-.review__shape {
-  top: -45%;
-  right: 0;
+.feedback__link:before, .feedback__link:after {
+  position: absolute;
+  transition: all 0.35s ease;
 }
-
+.feedback__link:before {
+  bottom: 0;
+  display: block;
+  height: 1px;
+  width: 0%;
+  content: "";
+  background-color: var(--primary);
+}
+.feedback__link:after {
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
 .feedback__image {
   transition: all 2s;
 }
 .feedback__image:hover {
   transform: scale(1.1);
 }
-.feedback__background-image {
-  background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
+.feedback__background-image-1 {
+  background-image: url(/images/features-animation.png?60e562a714bbd1a1fb98df49ba8414de);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.feedback__overlay {
-  transition: opacity 0.4s;
+.feedback__background-image-2 {
+  background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .clients__logo:hover {
@@ -48,13 +66,23 @@
   opacity: 0.5;
 }
 
-.counter__left::after {
-  content: "";
+.review__shape {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 0;
+}
+
+.counter {
+  position: relative;
+}
+.counter__left {
+  left: 0;
   border-left: 1px dashed rgba(157, 157, 157, 0.2);
   height: 400px;
 }
-.counter__right::before {
-  content: "";
+.counter__right {
+  right: 0;
   border-right: 1px dashed rgba(157, 157, 157, 0.2);
   height: 400px;
 }

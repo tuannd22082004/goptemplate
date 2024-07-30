@@ -1,27 +1,47 @@
-#cta-ani,
-#cta-footer {
+#cta-ani {
+  background-image: url(../images/cta/animation-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 50%;
 }
-#cta-ani {
-  background-image: url(../images/cta/animation-image.png);
-}
 #cta-footer {
   background-image: url(../images/cta/animation-image-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
 }
+
 .home {
   &__form {
     bottom: -50px;
   }
 }
-.review {
-  &__shape {
-    top: -45%;
-    right: 0;
-  }
-}
 .feedback {
+  &__link {
+    &:before,
+    &:after {
+      position: absolute;
+      transition: all 0.35s ease;
+    }
+    &:before {
+      bottom: 0;
+      display: block;
+      height: 1px;
+      width: 0%;
+      content: "";
+      background-color: var(--primary);
+    }
+    &:after {
+      left: 0;
+      top: 0;
+      position: absolute;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+  }
   &__image {
     transition: all 2s;
     &:hover {
@@ -29,12 +49,16 @@
     }
   }
   &__background-image {
-    background-image: url(../images/features/home-animation-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  &__overlay {
-    transition: opacity 0.4s;
+    &-1 {
+      background-image: url(../images/features/features-animation.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-2 {
+      background-image: url(../images/features/home-animation-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
 .clients {
@@ -52,19 +76,25 @@
     }
   }
 }
-.counter {
-  &__left {
-    &::after {
-      content: "";
-      border-left: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
-    }
+.review {
+  &__shape {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 0;
   }
+}
+.counter {
+  position: relative;
+  &__left {
+    left: 0;
+    border-left: 1px dashed rgba(157, 157, 157, 0.2);
+    height: 400px;
+  }
+
   &__right {
-    &::before {
-      content: "";
-      border-right: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
-    }
+    right: 0;
+    border-right: 1px dashed rgba(157, 157, 157, 0.2);
+    height: 400px;
   }
 }

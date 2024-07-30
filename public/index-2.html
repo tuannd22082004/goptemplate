@@ -33,13 +33,13 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
 
     <!--Navbar Start-->
-    <nav class="navbar py-4 navbar-expand-lg bg-white fixed-top sticky" id="navbar">
+    <nav class="navbar py-4 navbar-expand-lg fixed-top sticky" id="navbar">
         <div class="container-fluid custom-container">
             <a class="text-uppercase" href="index.html">
                 <img src="images/logo-dark.png" class="logo-light" alt="" height="32">
                 <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
             </a>
-            <button class="d-block border-0 bg-transparent d-lg-none my-0 me-3 order-3 ms-4" type="button"
+            <button class="d-block d-lg-none my-0 me-3 order-2 ms-4n border-0 bg-transparent" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
@@ -357,24 +357,23 @@
 
 
     <!-- start features -->
-    <section class="feedback section" id="features">
+    <section class="feedback bg-white section" id="features">
         <div class="container">
-            <div class="row align-items-center d-md-inherit" id="part1">
+            <div class="row align-items-center" id="part1">
                 <div class="col-lg-7">
-                    <div class="position-relative" id="sec-image">
-                        <div class=" overflow-hidden border-radius p-4 bg-transparent">
-                            <img src="images/features/img-1.png" alt="" class="feedback__image img-fluid">
+                    <div class="position-relative z-3" id="sec-image">
+                        <div class="bg-img overflow-hidden border-radius">
+                            <img src="images/features/img-1.png" alt=""
+                                class="feedback__image position-relative h-auto z-3 img-fluid">
                         </div>
                         <div class="position-absolute top-50 start-50 translate-middle">
                             <a href="#watchvideomodal" data-bs-toggle="modal">
                                 <img src="images/features/youtube.png" alt="" class="img-fluid">
                             </a>
                         </div>
-                        <div class="position-absolute" id="imgcontainer-1">
-                            <div id="inner-2">
-                                <div class="feedback__background-image">
-                                    <div class="feedback__overlay w-100 py-3 opacity-0 bg-black">
-                                    </div>
+                        <div id="imgcontainer-1">
+                            <div class="w-100 h-100 overflow-hidden border-radius bg-transparent" id="inner-2">
+                                <div class="feedback__background-image-1 w-100 h-100">
                                 </div>
                             </div>
                         </div>
@@ -395,12 +394,10 @@
                 </div>
             </div>
 
-            <div class="pt-5 mt-5 position-relative" id="part2">
+            <div class="mt-5 position-relative" id="part2">
                 <div id="imgcontainer-2">
-                    <div id="inner-3">
-                        <div class="feedback__background-image">
-                            <div class="w-100 py-3 opacity-0 bg-black">
-                            </div>
+                    <div class="w-100 h-100 overflow-hidden" id="inner-3">
+                        <div class="feedback__background-image-2 w-100 h-100">
                         </div>
                     </div>
                 </div>
@@ -424,8 +421,8 @@
                     </div>
                     <div class="col-lg-7 offset-lg-1 order-1 order-lg-2">
                         <div class=" position-relative cursor-pointer" id="sec-image-2">
-                            <div class="bg-img overflow-hidden border-radius p-4 bg-white">
-                                <img src="images/features/img-2.png" alt="" class="img-fluid">
+                            <div class="bg-img overflow-hidden border-radius">
+                                <img src="images/features/img-2.png" alt="" class="img-fluid feedback__image">
                             </div>
 
                         </div>
@@ -454,9 +451,9 @@
 
 
     <!-- start testimonial -->
-    <section class="section review testi-slider position-relative" id="user">
+    <section class="review section testi-slider position-relative" id="user">
         <div class="container-fluid">
-            <div class="review__shape d-none d-xl-block position-absolute">
+            <div class="review__shape d-none d-xl-block">
                 <img src="images/features/shape.png" alt="">
             </div>
 
@@ -585,12 +582,13 @@
 
 
     <!-- counter section-->
-    <section class="counter ">
+    <section class="counter bg-white">
         <div class="container">
             <div class="row" id="counter">
                 <div class="col-lg-3 p-lg-0">
-                    <div class="counter-box py-0 py-lg-5 text-center position-relative">
-                        <div class="counter__left"></div>
+                    <div class="position-relative py-0 py-lg-5 text-center position-relative">
+                        <div class="counter__left d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+                        </div>
                         <div class="py-5 pb-0">
                             <div class="counter-image">
                                 <img src="images/counter/support.png" alt="">
@@ -598,23 +596,25 @@
                             <h2 class="counter_value fw-bold mt-2 text-primary" data-bs-target="1789">0</h2>
                             <h5 class="counter-caption mb-0 mt-3">Awesome Support</h5>
                         </div>
-                        <div class="counter__right"></div>
+                        <div class="counter__right d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+                        </div>
                     </div>
                 </div>
                 <!-- end col -->
                 <div class="col-lg-3 p-lg-0">
-                    <div class="counter-box py-0 py-lg-5 text-center">
+                    <div class="position-relative py-0 py-lg-5 text-center">
                         <div class="py-5 pb-0">
                             <img src="images/counter/project-running.png" alt="">
                             <h2 class="counter_value fw-bold mt-2 text-primary" data-bs-target="19">0</h2>
                             <h5 class="counter-caption mb-0 mt-3">Project Running</h5>
                         </div>
-                        <div class="counter__right"></div>
+                        <div class="counter__right d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+                        </div>
                     </div>
                 </div>
                 <!-- end col -->
                 <div class="col-lg-3 p-lg-0">
-                    <div class="counter-box py-0 py-lg-5 text-center side-border">
+                    <div class="position-relative py-0 py-lg-5 text-center side-border">
                         <div class="py-5 pb-0">
                             <img src="images/counter/check.png" alt="">
                             <h2 class="counter_value fw-bold mt-2 text-primary" data-bs-target="24">0</h2>
@@ -624,14 +624,16 @@
                 </div>
                 <!-- end col -->
                 <div class="col-lg-3 p-lg-0">
-                    <div class="counter-box py-0 py-lg-5 text-center side-border">
-                        <div class="counter__left"></div>
+                    <div class="position-relative py-0 py-lg-5 text-center side-border">
+                        <div class="counter__left d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+                        </div>
                         <div class="py-5">
                             <img src="images/counter/idea.png" alt="">
                             <h2 class="counter_value fw-bold mt-2 text-primary" data-bs-target="1090">0</h2>
                             <h5 class="counter-caption mb-0 mt-3">Strategy Solution</h5>
                         </div>
-                        <div class="counter__right"></div>
+                        <div class="counter__right d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+                        </div>
                     </div>
                 </div>
                 <!-- end col -->
@@ -1046,15 +1048,16 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="copy-right mb-5 text-center text-muted">
-                        <script>document.write(new Date().getFullYear())</script> <span class="fw-bold">Slima</span> .
-                        Design with <i class="mdi mdi-heart text-danger"></i> by <a
+                        <script>document.write(new Date().getFullYear())</script> Slima. Design with <i
+                            class="mdi mdi-heart text-danger"></i> by <a
                             href="https://themeforest.net/search/themesdesign" target="_blank"
-                            class="text-reset text-decoration-none"><span class="fw-bold">vmmscompany</span></a>.
+                            class="text-reset">Themesdesign</a>.
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
