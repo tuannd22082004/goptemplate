@@ -61,8 +61,14 @@ a {
 }
 
 .navbar {
-  background-color: var(--white);
+  transition: all 0.5s ease-in-out;
   padding: 15px 0;
+  &__sticky {
+    padding: 20px;
+  }
+  @media screen and (max-width: 991px) {
+    background-color: #fff;
+  }
 }
 
 .navbar-nav li a {
