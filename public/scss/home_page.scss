@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap");
-
+.banner {
+  &__background {
+    background-image: url("../images/home/home-animation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+  }
+}
 .feedback {
   &__link {
     &:before,
@@ -32,6 +39,18 @@
       transform: scale(1.1);
     }
   }
+  &__background-image {
+    &-1 {
+      background-image: url(../images/features/features-animation.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-2 {
+      background-image: url(../images/features/home-animation-2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 .clients {
   &__logo {
@@ -48,19 +67,38 @@
     }
   }
 }
-.counter .side-border-left {
+.review {
+  &__shape {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 0;
+  }
+}
+.counter {
+  position: relative;
   &__left {
-    &::after {
-      content: "";
-      border-left: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
-    }
+    left: 0;
+    border-left: 1px dashed rgba(157, 157, 157, 0.2);
+    height: 400px;
   }
+
   &__right {
-    &::before {
-      content: "";
-      border-right: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
-    }
+    right: 0;
+    border-right: 1px dashed rgba(157, 157, 157, 0.2);
+    height: 400px;
   }
+}
+
+#cta-ani {
+  background-image: url(../images/cta/animation-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+#cta-footer {
+  background-image: url(../images/cta/animation-image-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
 }
