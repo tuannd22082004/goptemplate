@@ -1,0 +1,107 @@
+$primary-color: #20ad96;
+$overlay-color: rgba(0, 0, 0, 0.5);
+$dashed-border-color: rgba(157, 157, 157, 0.2);
+$transition-time: 0.35s;
+$hover-transform: scale(1.1);
+
+@mixin background-image($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#ani-home {
+  @include background-image("../images/home/home-6.png");
+}
+#cta-ani {
+  @include background-image("../images/cta/animation-image.png");
+}
+#cta-footer {
+  @include background-image("../images/cta/animation-image-2.png");
+}
+
+
+@mixin background-image($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner {
+  min-height: 100vh;
+  background-color: rgba($primary-color, 0.5);
+  &__img {
+    @include background-image("../images/features/features-animation.png");
+  }
+  &__overlay-img {
+    background-color: $overlay-color;
+    transition: opacity 0.4s;
+  }
+}
+.feedback {
+  &__link {
+    position: relative;
+    &:before,
+    &:after {
+      position: absolute;
+      transition: all $transition-time ease;
+    }
+    &:before {
+      bottom: 0;
+      height: 1px;
+      width: 0%;
+      content: "";
+      background-color: var(--primary);
+    }
+    &:after {
+      left: 0;
+      top: 0;
+      content: attr(data-hover);
+      color: #ffffff;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+  }
+  &__image {
+    transition: all 2s;
+    &:hover {
+      transform: $hover-transform;
+    }
+  }
+  &__background-image {
+    &-1 {
+      @include background-image("../images/features/features-animation.png");
+    }
+    &-2 {
+      @include background-image("../images/features/home-animation-2.png");
+    }
+  }
+}
+.clients {
+  &__logo {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.modal {
+  &__close {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.counter {
+  &__left,
+  &__right {
+    height: 400px;
+  }
+  &__left {
+    left: 0;
+    border-left: 1px dashed $dashed-border-color;
+  }
+  &__right {
+    right: 0;
+    border-right: 1px dashed $dashed-border-color;
+  }
+}
