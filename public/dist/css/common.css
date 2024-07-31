@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap);
+body {
+  background-color: var(--color-8);
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus, a:active, a.active {
+  color: var(--color-1);
+}
+
+.text-color-1 {
+  color: var(--color-1) !important;
+}
+.text-color-2 {
+  color: var(--color-2) !important;
+}
+.text-color-3 {
+  color: var(--color-3) !important;
+}
+.text-color-4 {
+  color: var(--color-4) !important;
+}
+.text-color-5 {
+  color: var(--color-5) !important;
+}
+.text-color-6 {
+  color: var(--color-6) !important;
+}
+.text-color-7 {
+  color: var(--color-7) !important;
+}
+.text-color-8 {
+  color: var(--color-8) !important;
+}
+
+.bg-color-1 {
+  background-color: var(--color-1) !important;
+}
+.bg-color-2 {
+  background-color: var(--color-2) !important;
+}
+.bg-color-3 {
+  background-color: var(--color-3) !important;
+}
+.bg-color-4 {
+  background-color: var(--color-4) !important;
+}
+.bg-color-5 {
+  background-color: var(--color-5) !important;
+}
+.bg-color-6 {
+  background-color: var(--color-6) !important;
+}
+.bg-color-7 {
+  background-color: var(--color-7) !important;
+}
+.bg-color-8 {
+  background-color: var(--color-8) !important;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative !important;
+}
+
+.para-p {
+  max-width: 650px;
+}
+
+.bg-overlay {
+  background-color: rgba(74, 74, 74, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title h1 {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.1);
+  left: 0px;
+  right: 0px;
+  top: -45px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-4);
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+  border: 1px solid var(--color-1);
+  overflow: hidden;
+  position: relative;
+}
+.btn-lg {
+  padding: 16px 40px;
+}
+.btn-sm {
+  padding: 8px 20px;
+}
+.btn-color-1 {
+  background: var(--color-1);
+  border-color: var(--color-1) !important;
+  color: var(--color-2);
+}
+.btn-color-1:hover, .btn-color-1:focus, .btn-color-1:active, .btn-color-1.active, .btn-color-1.focus, .btn-color-1:not(:disabled):not(.disabled):active, .btn-color-1:not(:disabled):not(.disabled):active:focus, .open > .dropdown-toggle .btn-color-1 {
+  background-color: var(--color-3);
+  border: 1px solid var(--color-3) !important;
+  color: var(--color-4);
+}
+.btn-outline-color-1 {
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+.btn-outline-color-1:hover, .btn-outline-color-1:focus, .btn-outline-color-1:active, .btn-outline-color-1.active, .btn-outline-color-1.focus, .btn-outline-color-1:not(:disabled):not(.disabled):active, .btn-outline-color-1:not(:disabled):not(.disabled):active:focus, .open > .dropdown-toggle .btn-outline-color-1 {
+  background-color: var(--color-3) !important;
+  color: var(--color-4);
+  border-color: var(--color-4);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+  padding: 15px 0;
+}
+.navbar__sticky {
+  padding: 20px;
+}
+.navbar__link {
+  color: rgba(var(--color-6), 0.5);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.imgcontainer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150%;
+  top: -100px;
+  perspective: 30px;
+  left: -50px;
+}
+
+.footer {
+  background-color: var(--color-8);
+}
+
+.smooth {
+  transition: transform 0.5s;
+}

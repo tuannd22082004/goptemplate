@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap);
 .banner__background {
   background-image: url(/images/home-animation.png?d9f7a228a6f877bcc3523005b0ac3b9f);
   background-repeat: no-repeat;
@@ -6,11 +5,11 @@
   background-position: 50% 50%;
 }
 
-.feedback__link:before, .feedback__link:after {
+.features__link:before, .features__link:after {
   position: absolute;
   transition: all 0.35s ease;
 }
-.feedback__link:before {
+.features__link:before {
   bottom: 0;
   display: block;
   height: 1px;
@@ -18,7 +17,7 @@
   content: "";
   background-color: var(--primary);
 }
-.feedback__link:after {
+.features__link:after {
   left: 0;
   top: 0;
   position: absolute;
@@ -28,21 +27,22 @@
   max-width: 0%;
   overflow: hidden;
 }
-.feedback__image {
+.features__image {
   transition: all 2s;
 }
-.feedback__image:hover {
+.features__image:hover {
   transform: scale(1.1);
 }
-.feedback__background-image-1 {
-  background-image: url(/images/features-animation.png?60e562a714bbd1a1fb98df49ba8414de);
+.features__background-image {
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
-.feedback__background-image-2 {
+.features__background-image--primary {
+  background-image: url(/images/features-animation.png?60e562a714bbd1a1fb98df49ba8414de);
+}
+.features__background-image--secondary {
   background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .clients__logo:hover {
@@ -56,15 +56,36 @@
   opacity: 0.5;
 }
 
-.review__shape {
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 0;
+.testimonial__avatar {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.testimonial .swiper-slide {
+  opacity: 0.6;
+}
+.testimonial .swiper-slide-active {
+  background-color: var(--color-5);
+  opacity: 1;
+}
+.testimonial .swiper-pagination-bullets, .testimonial .swiper-pagination-custom, .testimonial .swiper-pagination-fraction {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+.testimonial .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+.testimonial .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--color-6) !important;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle !important;
 }
 
-.counter {
-  position: relative;
+.counter__title {
+  font-size: 3.5rem;
 }
 .counter__left {
   left: 0;
@@ -75,6 +96,15 @@
   right: 0;
   border-right: 1px dashed rgba(157, 157, 157, 0.2);
   height: 400px;
+}
+
+.pricing__title {
+  font-size: 3.5rem;
+}
+
+.blog__read:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-3) !important;
 }
 
 #cta-ani {

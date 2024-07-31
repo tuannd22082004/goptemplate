@@ -1,16 +1,25 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  const navbarCollapse = document.getElementById("navbarCollapse");
+  navbarCollapse.addEventListener("show.bs.collapse", function () {
+    navbar.classList.add("bg-color-5");
+  });
+  navbarCollapse.addEventListener("hide.bs.collapse", function () {
+    navbar.classList.remove("bg-color-5");
+  });
+});
 //  Window scroll sticky class add
-
 function windowScroll() {
   const navbar = document.getElementById("navbar");
   if (
     document.body.scrollTop >= 50 ||
     document.documentElement.scrollTop >= 50
   ) {
-    navbar.classList.add("bg-white");
+    navbar.classList.add("bg-color-5");
     navbar.classList.add("py-3");
     navbar.classList.remove("py-4");
   } else {
-    navbar.classList.remove("bg-white");
+    navbar.classList.remove("bg-color-5");
     navbar.classList.remove("py-3");
     navbar.classList.add("py-4");
   }
@@ -24,7 +33,7 @@ window.addEventListener("scroll", (ev) => {
 // tiny slider
 
 var slider = tns({
-  container: ".client-slider",
+  container: ".clients__slider",
   loop: true,
   autoplay: true,
   mouseDrag: true,

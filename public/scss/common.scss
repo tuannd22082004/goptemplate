@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap);
+
+body {
+  background-color: var(--color-8);
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: var(--color-1);
+  }
+}
+.text-color {
+  &-1 {
+    color: var(--color-1) !important;
+  }
+  &-2 {
+    color: var(--color-2) !important;
+  }
+  &-3 {
+    color: var(--color-3) !important;
+  }
+  &-4 {
+    color: var(--color-4) !important;
+  }
+  &-5 {
+    color: var(--color-5) !important;
+  }
+  &-6 {
+    color: var(--color-6) !important;
+  }
+  &-7 {
+    color: var(--color-7) !important;
+  }
+  &-8 {
+    color: var(--color-8) !important;
+  }
+}
+
+.bg-color {
+  &-1 {
+    background-color: var(--color-1) !important;
+  }
+  &-2 {
+    background-color: var(--color-2) !important;
+  }
+  &-3 {
+    background-color: var(--color-3) !important;
+  }
+  &-4 {
+    background-color: var(--color-4) !important;
+  }
+  &-5 {
+    background-color: var(--color-5) !important;
+  }
+  &-6 {
+    background-color: var(--color-6) !important;
+  }
+  &-7 {
+    background-color: var(--color-7) !important;
+  }
+  &-8 {
+    background-color: var(--color-8) !important;
+  }
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative !important;
+}
+
+.para-p {
+  max-width: 650px;
+}
+
+.bg-overlay {
+  background-color: rgba(74, 74, 74, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title h1 {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.1);
+  left: 0px;
+  right: 0px;
+  top: -45px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-4);
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+  border: 1px solid var(--color-1);
+  overflow: hidden;
+  position: relative;
+
+  &-lg {
+    padding: 16px 40px;
+  }
+
+  &-sm {
+    padding: 8px 20px;
+  }
+
+  &-color-1 {
+    background: var(--color-1);
+    border-color: var(--color-1) !important;
+    color: var(--color-2);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):active:focus,
+    .open > .dropdown-toggle & {
+      background-color: var(--color-3);
+      border: 1px solid var(--color-3) !important;
+      color: var(--color-4);
+    }
+  }
+
+  &-outline-color-1 {
+    color: var(--color-1);
+    border-color: var(--color-1);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled):active:focus,
+    .open > .dropdown-toggle & {
+      background-color: var(--color-3) !important;
+      color: var(--color-4);
+      border-color: var(--color-4);
+    }
+  }
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+  padding: 15px 0;
+  &__sticky {
+    padding: 20px;
+  }
+  &__link {
+    color: rgba(var(--color-6), 0.5);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+}
+
+.imgcontainer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150%;
+  top: -100px;
+  perspective: 30px;
+  left: -50px;
+}
+
+.footer {
+  background-color: var(--color-8);
+}
+
+.smooth {
+  transition: transform 0.5s;
+}
