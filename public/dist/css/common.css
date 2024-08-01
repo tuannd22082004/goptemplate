@@ -11,56 +11,6 @@ a:hover, a:focus, a:active, a.active {
   color: var(--color-1);
 }
 
-.text-color-1 {
-  color: var(--color-1) !important;
-}
-.text-color-2 {
-  color: var(--color-2) !important;
-}
-.text-color-3 {
-  color: var(--color-3) !important;
-}
-.text-color-4 {
-  color: var(--color-4) !important;
-}
-.text-color-5 {
-  color: var(--color-5) !important;
-}
-.text-color-6 {
-  color: var(--color-6) !important;
-}
-.text-color-7 {
-  color: var(--color-7) !important;
-}
-.text-color-8 {
-  color: var(--color-8) !important;
-}
-
-.bg-color-1 {
-  background-color: var(--color-1) !important;
-}
-.bg-color-2 {
-  background-color: var(--color-2) !important;
-}
-.bg-color-3 {
-  background-color: var(--color-3) !important;
-}
-.bg-color-4 {
-  background-color: var(--color-4) !important;
-}
-.bg-color-5 {
-  background-color: var(--color-5) !important;
-}
-.bg-color-6 {
-  background-color: var(--color-6) !important;
-}
-.bg-color-7 {
-  background-color: var(--color-7) !important;
-}
-.bg-color-8 {
-  background-color: var(--color-8) !important;
-}
-
 .section {
   padding-top: 120px;
   padding-bottom: 120px;

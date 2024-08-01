@@ -107,6 +107,41 @@
   color: var(--color-3) !important;
 }
 
+.faq__toggle:before {
+  content: "-";
+  width: 22px;
+  height: 22px;
+  color: var(--color-2);
+  border-radius: 50%;
+  text-align: center;
+  background: var(--color-1);
+  line-height: 22px;
+  display: block;
+  float: right;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq__toggle.collapsed:before {
+  content: "+";
+}
+.faq__card-body {
+  animation: sweep 0.5s ease-in-out;
+  border-left: solid 2px var(--color-1);
+  padding-left: 15px;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
 #cta-ani {
   background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
   background-repeat: no-repeat;

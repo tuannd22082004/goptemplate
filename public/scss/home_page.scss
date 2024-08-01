@@ -129,6 +129,48 @@
     }
   }
 }
+.faq {
+  &__toggle {
+    &:before {
+      content: "-"; 
+      width: 22px;
+      height: 22px;
+      color: var(--color-2);
+      border-radius: 50%;
+      text-align: center;
+      background: var(--color-1);
+      line-height: 22px;
+      display: block;
+      float: right;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.collapsed:before {
+      content: "+";
+    }
+  }
+
+  &__card-body {
+    animation: sweep .5s ease-in-out;
+    border-left: solid 2px var(--color-1);
+    padding-left: 15px; // Adjust as needed
+  }
+
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+      margin-left: -10px;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0;
+    }
+  }
+}
+
 #cta-ani {
   background-image: url(../images/cta/animation-image.png);
   background-repeat: no-repeat;
