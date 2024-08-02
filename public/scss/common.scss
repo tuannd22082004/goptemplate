@@ -14,34 +14,6 @@ a {
     color: var(--color-1);
   }
 }
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  position: relative !important;
-}
-
-.para-p {
-  max-width: 650px;
-}
-
-.bg-overlay {
-  background-color: rgba(74, 74, 74, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.title h1 {
-  position: absolute;
-  color: rgba(0, 0, 0, 0.1);
-  left: 0px;
-  right: 0px;
-  top: -45px;
-}
 
 .btn {
   padding: 12px 30px;
@@ -99,33 +71,14 @@ a {
   }
 }
 
-.navbar {
+.header {
   transition: all 0.5s ease-in-out;
-  padding: 15px 0;
-  &__sticky {
-    padding: 20px;
+  &__logo{
+    max-height: 50px;
+    max-width: 170px;
   }
-  &__link {
-    color: rgba(var(--color-6), 0.5);
+  &__nav-link {
     text-transform: uppercase;
     transition: color 0.3s ease;
   }
-}
-
-.imgcontainer {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 150%;
-  top: -100px;
-  perspective: 30px;
-  left: -50px;
-}
-
-.footer {
-  background-color: var(--color-8);
-}
-
-.smooth {
-  transition: transform 0.5s;
 }
