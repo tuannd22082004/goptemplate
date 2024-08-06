@@ -2,1060 +2,1072 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive bootstrap landing template">
-    <meta name="author" content="Themesdesign">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive bootstrap landing template" />
+  <meta name="author" content="Themesdesign" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <title>Slima | Responsive Bootstrap Landing Template</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
 
-    <title>Slima | Responsive Bootstrap Landing Template</title>
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- tiny slider -->
-    <link href="css/tiny-slider.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
-
-
-    <!-- Materialdesign icons css -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dist/css/variable.css" rel="stylesheet">
-    <link href="dist/css/global.css" rel="stylesheet">
-    <link href="dist/css/home_page.css" rel="stylesheet">
-
-    <style>
-
-    </style>
-
+  <link href="dist/css/global.css" rel="stylesheet" />
+  <link href="dist/css/common.css" rel="stylesheet" />
+  <link href="dist/css/home_page.css" rel="stylesheet" />
+  <style></style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
-    <!--Navbar Start-->
-    <nav class="navbar py-4 navbar-expand-lg bg-white fixed-top sticky" id="navbar">
-        <div class="container-fluid custom-container">
-            <a class="text-uppercase" href="index.html">
-                <img src="images/logo-dark.png" class="logo-light" alt="" height="32">
-                <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
-            </a>
-            <button class="d-block d-lg-none my-0 me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
+  <section class="header py-4 px-3 navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="text-uppercase" href="index.html">
+        <img src="images/logo-dark.png" class="header__logo" alt="logo" />
+      </a>
+      <div class="list-inline d-flex d-md-inherit mb-0 order-1 order-lg-3">
+        <div class="list-inline-item dropdown language me-4">
+          <a href="#" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./images/common/language.svg" alt="language" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
+            <li>
+              <a class="dropdown-item" href="#">English</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Deutsch</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Account">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="./images/common/user.svg" alt="image" />
+          </a>
+        </div>
+      </div>
+      <button class="d-block d-lg-none my-0 me-3 order-2 ms-4 border-0 bg-transparent" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-label="Toggle navigation">
+        <img class="radio ratio-1x1" src="./images/common/align-justify.svg" alt="menu" />
+      </button>
+      <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto navbar-center">
+          <li class="p-2">
+            <a href="#home" class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Home</a>
+          </li>
+          <li class="p-2 dropdown">
+            <a href="#service"
+              class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Service</a>
+          </li>
+          <li class="p-2 dropdown">
+            <a href="#features"
+              class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Features</a>
+          </li>
+          <li class="p-2 dropdown">
+            <a href="#user" class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">User</a>
+          </li>
+          <li class="p-2">
+            <a href="#pricing"
+              class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Pricing</a>
+          </li>
+          <li class="p-2 dropdown">
+            <a href="#faq" class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Faq</a>
+          </li>
+          <li class="p-2">
+            <a href="#blog" class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Blog</a>
+          </li>
+          <li class="p-2">
+            <a href="#subscribe"
+              class="header__nav-link color-6 opacity-75 fs-8 bg-transparent px-3 py-2 fw-4">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">First name
+                <span class="color-1">*</span>
+              </label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required />
+              <div class="valid-features">Looks good!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Email
+                <span class="color-1">*</span>
+              </label>
+              <input type="email" class="form-control" id="validationCustom02" value="" required />
+              <div class="valid-features">Looks good!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Subject
+                <span class="color-1">*</span>
+              </label>
+              <input type="text" class="form-control" id="validationCustom03" required />
+              <div class="invalid-features">Please provide a valid city.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom05" class="form-label">Password
+                <span class="color-1">*</span>
+              </label>
+              <input type="password" class="form-control" id="validationCustom05" required />
+              <div class="invalid-features">Please provide a valid zip.</div>
+            </div>
+            <div class="col-lg-12">
+              <label for="validationTextarea" class="form-label">Textarea
+                <span class="color-1">*</span>
+              </label>
+              <textarea class="form-control" id="validationTextarea" required></textarea>
+              <div class="invalid-features">
+                You must agree before submitting.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-sm btn-color-1" type="submit">
+                Submit form
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="banner p-5 bg-color-7 position-relative d-flex align-items-center d-md-inherit" id="home">
+    <div class="banner__round container position-relative w-100 py-0 py-sm-5 my-4">
+      <div class="fs-1 fw-1 py-lg-4 px-lg-5">
+        <div class="row align-items-center d-md-inherit">
+          <div class="col-lg-6">
+            <h2 class="mt-5 mt-lg-0 fs-1 fw-4 color-3">
+              Get Your Professional Website Done With
+            </h2>
+            <p class="fs-6 opacity-75 my-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Numquam soluta eius illo, recusandae tenetur saepe, eaque
+              voluptate.
+            </p>
+            <button class="btn btn-lg btn-color-1">
+              <img src="./images/home/home-5/cloud_download.svg" alt="image" />
+              Download free guide
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto navbar-center">
-                    <li class="p-2">
-                        <a href="#home"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Home</a>
-                    </li>
-                    <li class="p-2 dropdown">
-                        <a href="#service"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Service</a>
-                    </li>
-                    <li class="p-2 dropdown">
-                        <a href="#features"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Features</a>
-                    </li>
-
-                    <li class="p-2 dropdown">
-                        <a href="#user"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">User</a>
-                    </li>
-                    <li class="p-2">
-                        <a href="#pricing"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Pricing</a>
-                    </li>
-                    <li class="p-2">
-                        <a href="#faq"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Faq</a>
-                    </li>
-                    <li class="p-2">
-                        <a href="#blog"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Blog</a>
-                    </li>
-                    <li class="p-2">
-                        <a href="#subscribe"
-                            class="text-active px-3 py-2 fw-bolder transition-colors text-decoration-none">Subscribe</a>
-                    </li>
-                </ul>
+            <div class="py-1 fs-7 fw-4 position-relative mt-4">
+              <a href="#">
+                <span class="color-6 opacity-75">Have questions?</span>
+                <span class="color-1">Get Free From
+                  <img src="./images/common/arrow.svg" alt="image" />
+                </span>
+              </a>
             </div>
-            <div class="header-menu list-inline d-flex d-md-inherit mb-0 order-1">
-                <div class="list-inline-item dropdown language me-4">
-                    <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-web f-24 text-black"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                    </ul>
-                </div>
-                <div class="Account ">
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="mdi mdi-account-box-outline f-24 text-black"></i>
-                    </a>
-
-                </div>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <div class="banner__background text">
+              <div class="mt-5 mt-lg-0 ms-lg-5 position-relative">
+                <img src="images/home/home-bg.png" alt="image" class="banner__image img-fluid" />
+              </div>
             </div>
-            <!--end header-menu-->
+          </div>
         </div>
-        <!--end container-->
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="row g-3 needs-validation">
-                        <div class="col-md-6">
-                            <label for="validationCustom01" class="form-label">First name <span
-                                    class="text-primary">*</span></label>
-                            <input type="text" class="form-control" id="validationCustom01" value="" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom02" class="form-label">Email <span
-                                    class="text-primary">*</span></label>
-                            <input type="email" class="form-control" id="validationCustom02" value="" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">Subject <span
-                                    class="text-primary">*</span></label>
-                            <input type="text" class="form-control" id="validationCustom03" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid city.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom05" class="form-label">Password <span
-                                    class="text-primary">*</span></label>
-                            <input type="password" class="form-control" id="validationCustom05" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid zip.
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="validationTextarea" class="form-label">Textarea<span
-                                    class="text-primary">*</span></label>
-                            <textarea class="form-control" id="validationTextarea" required></textarea>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- end modal -->
-
-
-    <!-- start home section -->
-    <section class="position-relative d-flex align-items-center d-md-inherit p-5" id="home">
-        <div class="container" id="ani-round">
-            <div class="fs-1 fw-1">
-                <div class="row align-items-center d-md-inherit">
-                    <div class="col-lg-6">
-                        <h2 class="title mt-5 mt-lg-0">
-                            Get Your Professional Website Done With
-                        </h2>
-                        <p class="f-16 my-4 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Numquam soluta eius illo, recusandae tenetur saepe, eaque voluptate.</p>
-                        <button class="btn bg-primary text-white"><i class=" mdi mdi-cloud-download f-20 align-middle
-                            me-2"></i>
-                            Download free guide</button>
-
-                        <div class="py-1 position-relative mt-4">
-                            <a href="" class="text-primary fw-6 f-14"><span class="text-muted fw-6">Have
-                                    questions?</span><span class="text-primary fw-bold">Get Free From<i
-                                        class="mdi mdi-arrow-right"></i></span> </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="animation-image" id="home-animation">
-                            <div class="main-image mt-5 mt-lg-0 ms-lg-5 position-relative">
-                                <img src="images/home/home-bg.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  </section>
+  <section class="brands bg-color-7 py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="brands__swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo1.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo2.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo3.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo4.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo5.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo6.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo7.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo8.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo9.png" alt="image" class="img-fluid" />
+              </div>
+              <div class="brands__slide swiper-slide">
+                <img src="images/clients/logo10.png" alt="image" class="img-fluid" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="service py-4 bg-color-8" id="service">
+    <div class="container py-0 py-sm-5 my-5">
+      <div class="row justify-content-center mb-4 pb-2">
+        <div class="col-lg-6">
+          <div class="text-center">
+            <h6 class="color-6 opacity-75 f-16 fw-2">
+              Learning to Write as a Professional
+            </h6>
+            <h2 class="mb-3">
+              Start <span class="color-1 fw-2"> your project </span> with
+              these
 
-    </section>
-    <!-- end section -->
-
-
-    <!-- client section -->
-    <section class="section pt-0 opacity-10">
-        <div class="container">
+              <br />
+              stunning pages.
+            </h2>
+            <p class="color-6 opacity-75 mx-auto mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              veniam impedit hic, tempore esse voluptatum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mt-4 pt-2">
+          <div class="text-center text-lg-start">
+            <div>
+              <img src="images/service/img-1.png" alt="img-fluid" />
+            </div>
+            <h5 class="fw-5 mt-4 mb-3 color-3">Customize Preferences</h5>
+            <p class="color-3 service__clamp">
+              Learners are given the right to arrange and customize their
+              study schedule and timetable based on preferences.
+            </p>
+            <div class="mt-2">
+              <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
+                <img src="./images/common/arrow_black.svg" alt="image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4 pt-2">
+          <div class="text-center text-lg-start">
+            <div>
+              <img src="images/service/img-2.png" alt="img-fluid" />
+            </div>
+            <h5 class="fw-5 mt-4 mb-3 color-3">Truly Multipurpose</h5>
+            <p class="color-3 service__clamp">
+              Learners are given the right to arrange and customize their
+              study schedule and timetable based on preferences.
+            </p>
+            <div class="mt-2">
+              <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
+                <img src="./images/common/arrow_black.svg" alt="image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4 pt-2">
+          <div class="text-center text-lg-start">
+            <div>
+              <img src="images/service/img-3.png" alt="img-fluid" />
+            </div>
+            <h5 class="fw-5 mt-4 mb-3 color-3">Strategy Solutions</h5>
+            <p class="color-3 service__clamp">
+              Learners are given the right to arrange and customize their
+              study schedule and timetable based on preferences.
+            </p>
+            <div class="mt-2">
+              <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
+                <img src="./images/common/arrow_black.svg" alt="image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features py-4 bg-color-7" id="features">
+    <div class="container py-0 py-sm-5 my-5">
+      <div class="row p-5 mb-5 align-items-center" id="features-primary">
+        <div class="col-lg-7">
+          <div class="position-relative z-3" id="sec-image">
+            <div class="overflow-hidden rounded-6">
+              <img src="images/features/img-1.png" alt="image"
+                class="features__image position-relative h-auto z-3 img-fluid" />
+            </div>
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <a href="#watchvideomodal" data-bs-toggle="modal">
+                <img src="images/features/youtube.png" alt="image" class="img-fluid" />
+              </a>
+            </div>
+            <div class="features__background-container position-absolute z-1 w-100">
+              <div class="features__smooth w-100 h-100 overflow-hidden rounded-6 bg-transparent" id="inner-primary">
+                <div class="features__background-image features__background-image--primary w-100 h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+          <h6 class="color-6 fw-2 opacity-75">
+            Your profit
+            <span class="fw-6">grows & enjoy</span>
+          </h6>
+          <h1 class="fw-4 mt-2 color-3">
+            Get Awesome
+            <span class="color-1 fw-3">Companionship</span>
+          </h1>
+          <p class="mt-3 color-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            qui, pariatur nulla, sint voluptatibus explicabo voluptates
+            aliquid dolorem suscipit nostrum expedita itaque nesciunt autem ?
+          </p>
+          <div class="mt-4">
+            <a href="" class="features__link py-1 position-relative text-decoration-none color-1 fw-4">
+              Download free feedback
+              <img src="./images/common/arrow.svg" alt="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5 mt-5 align-items-center d-md-inherit" id="features-secondary">
+        <div class="col-lg-4 order-2 order-lg-1 mt-5 mt-lg-0">
+          <h6 class="color-6 opacity-75 fw-2">
+            Get started
+            <span class="fw-6">available courses</span>
+          </h6>
+          <h1 class="fw-4 mt-2 color-3">
+            your success
+            <span class="color-1 fw-2">plan now!</span>
+          </h1>
+          <p class="mt-3 color-3">
+            Temporibus quasi adipisci eligendi quaerat iste debitis numquam
+            deleniti labore corporis architecto, voluptas cupiditate
+            distinctio?
+          </p>
+          <div class="position-relative py-1 mt-4">
+            <a href="" class="features__link py-1 position-relative text-decoration-none color-1 fw-4">
+              Download free feedback
+              <img src="./images/common/arrow.svg" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 offset-lg-1 order-1 order-lg-2">
+          <div class="position-relative" id="sec-image-2">
+            <div class="overflow-hidden rounded-6 position-relative z-3">
+              <img src="images/features/img-2.png" alt="image" class="img-fluid features__image" />
+            </div>
+            <div class="features__background-container position-absolute z-1 w-100">
+              <div class="features__smooth w-100 h-100 overflow-hidden rounded-6 bg-transparent" id="inner-secondary">
+                <div class="features__background-image features__background-image--secondary w-100 h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="watchvideomodal" data-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-content hero-modal-0 bg-transparent position-relative">
+          <button type="button" class="model__close btn bg-white position-absolute opacity-0" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <video id="VisaChipCardVideo" class="w-100" controls="">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial bg-color-8 py-4 position-relative" id="user">
+    <div class="container-fluid py-0 py-sm-5 my-5">
+      <div class="position-absolute bottom-100 end-0 z-0 d-none d-lg-block">
+        <img src="images/features/shape.png" alt="image" class="img-fluid" />
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-8">
+          <div class="heading text-center">
+            <h6 class="color-6 opacity-75 f-16 fw-2">
+              Design Better Landing Pages For You
+            </h6>
+            <h2 class="mb-3 color-3">
+              Better <span class="color-1 fw-2"> communicate </span> and your
+              moments.
+            </h2>
+            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+              Aperiam consequatur nostrum fuga eaque quos distinctio
+              laboriosam <br />
+              minima, magni eius delectus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial__swiper swiper-container mt-5 pb-5">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+            <h5 class="mb-4 color-6">
+              Join millions of users and grow business. what say about?
+            </h5>
+            <p class="fs-5 color-6 opacity-75">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit iure corporis corrupti eveniet eligendi vero nobis
+              architecto praesentium.
+            </p>
+            <div class="d-flex align-items-center mt-4 pt-3">
+              <div class="flex-shrink-0">
+                <div>
+                  <img src="images/users/img-1.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="user-info">
+                  <h6 class="color-6">Janice C. Campbe</h6>
+                  <p class="mb-0 fs-6 color-6 opacity-75">
+                    / Embedded analytics
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+            <h5 class="mb-4 color-6">
+              Collaborate with your team anytime anywhere.
+            </h5>
+            <p class="fs-5 color-6 opacity-75">
+              Otrsr sed urna tellus porta curabitur eget tellus dictum
+              consectetur velit a in ultricies leo praesent rutrum sit amet
+              euismod nulla intdum lectus.
+            </p>
+            <div class="d-flex align-items-center mt-4 pt-3">
+              <div class="flex-shrink-0">
+                <div>
+                  <img src="images/users/img-2.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="user-info">
+                  <h6 class="color-6">Richard S. Drews</h6>
+                  <p class="mb-0 fs-6 color-6 opacity-75">/ Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+            <h5 class="mb-4 color-6">
+              Become a part of Borial bussiness community today
+            </h5>
+            <p class="fs-5 color-6 opacity-75">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque
+              nihil impedit quo minus id quod maxime .
+            </p>
+            <div class="d-flex align-items-center mt-4 pt-3">
+              <div class="flex-shrink-0">
+                <div>
+                  <img src="images/users/img-3.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="user-info">
+                  <h6 class="color-6">Willimore Wilson</h6>
+                  <p class="mb-0 fs-6 color-6 opacity-75">/ Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+            <h5 class="mb-4 color-6">
+              Become a part of Borial bussiness community today
+            </h5>
+            <p class="fs-5 color-6 opacity-75">
+              I feel confident imposing change on myself. It's a lot more fun
+              progressing than looking back. That's why scelerisque need throw
+              curve balls.
+            </p>
+            <div class="d-flex align-items-center mt-4 pt-3">
+              <div class="flex-shrink-0">
+                <div>
+                  <img src="images/users/img-4.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <div class="user-info">
+                  <h6 class="color-6">Brandon Carney</h6>
+                  <p class="mb-0 fs-6 color-6 opacity-75">/ Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta py-4 bg-color-8 position-relative w-100" id="cta-ani">
+    <div class="container py-0 py-sm-5 position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center">
+            <h5 class="color-3">
+              A simple and smart design grow
+              <span class="color-1">your business </span>
+            </h5>
+            <h2 class="mt-3 fw-5 color-3">
+              Our mission Ultimate features to Grow Your Business.
+            </h2>
+            <button class="btn btn-lg btn-color-1 mt-4 f-14">
+              Get started for free
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="counter bg-color-7">
+    <div class="container">
+      <div class="row" id="counter">
+        <div class="col-lg-3 p-lg-0">
+          <div class="position-relative h-100 py-0 py-lg-5 text-center">
+            <div class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            </div>
+            <div class="py-5 pb-0">
+              <div>
+                <img src="images/counter/support.png" alt="image" class="img-fluid" />
+              </div>
+              <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="1789">
+                0
+              </h2>
+              <h5 class="mb-0 mt-3">Awesome Support</h5>
+            </div>
+            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-lg-0">
+          <div class="position-relative h-100 py-0 py-lg-5 text-center">
+            <div class="py-5 pb-0">
+              <img src="images/counter/project-running.png" alt="image" class="img-fluid" />
+              <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="19">
+                0
+              </h2>
+              <h5 class="mb-0 mt-3">Project Running</h5>
+            </div>
+            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-lg-0">
+          <div class="position-relative h-100 py-0 py-lg-5 text-center">
+            <div class="py-5 pb-0">
+              <img src="images/counter/check.png" alt="image" class="img-fluid" />
+              <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="24">
+                0
+              </h2>
+              <h5 class="mb-0 mt-3">Project Complate</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-lg-0">
+          <div class="position-relative h-100 py-0 py-lg-5 text-center">
+            <div class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            </div>
+            <div class="py-5">
+              <img src="images/counter/idea.png" alt="image" class="img-fluid" />
+              <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="1090">
+                0
+              </h2>
+              <h5 class="mb-0 mt-3">Strategy Solution</h5>
+            </div>
+            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing py-4 bg-color-8" id="pricing">
+    <div class="container py-0 py-sm-5 my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center">
+            <h6 class="color-6 opacity-75 fw-2">Get Your Best Package</h6>
+            <h2 class="mb-3 color-3 fw-3">
+              Best <span class="color-1 fw-2">Pricing</span> Package Start
+              Business
+            </h2>
+            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+              Fugit, voluptatum. Cum earum reprehenderit quis, esse dolorem
+              quaerat. Recusandae officiis facilis quia quidem iusto labore
+              temporibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center d-md-inherit">
+        <div class="col-lg-4">
+          <div class="bg-color-1 p-4 mt-5 rounded-6 p-4">
+            <h2 class="color-2">
+              Save your
+              <br />
+              <span class="fw-6 color-8">money now</span>
+            </h2>
+            <p class="mt-3 color-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus nostrum nihil in nulla doloribus voluptatem.
+            </p>
+            <p class="mt-3 color-8">
+              Esse facere reiciendis error necessitatibus eum sed recusandae.
+            </p>
+            <div class="price-image">
+              <img src="images/pricing/investment.png" alt="image" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <div class="box-shadow p-4 rounded-6 p-4 bg-white">
+            <div class="text-center mb-4">
+              <h6 class="color-1 fw-4">Wealth</h6>
+              <div
+                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
+                <div class="w-1 h-1 position-absolute tag left-50 bottom-0 mt-1"></div>
+                <h6 class="mb-0 color-4">basic</h6>
+              </div>
+              <div class="mt-4">
+                <h2>
+                  <sup class="color-6 fw-5 opacity-50">$</sup>
+                  <span class="pricing__title color-1">0</span>
+                </h2>
+              </div>
+              <div class="mt-4">
+                <p>
+                  <span class="color-1 icon me-2">∎</span>10 GB Disk Space
+                </p>
+                <p>
+                  <span class="color-1 icon me-2">∎</span>1 Year Technical
+                  Support
+                </p>
+                <p><span class="color-1 icon me-2">∎</span>SQL Database</p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-color-1 rounded-pill position-absolute start-50 translate-middle-x">
+              Get started
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <div class="box-shadow p-4 rounded-6 p-4 bg-white position-relative">
+            <div class="text-center mb-4">
+              <h6 class="color-1 fw-4">Combination</h6>
+              <div
+                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
+                <div class="w-1 h-1 position-absolute tag"></div>
+                <h6 class="mb-0 color-4">Premium</h6>
+              </div>
+              <div class="mt-4">
+                <h2>
+                  <sup class="color-6 fw-5 opacity-50">$</sup>
+                  <span class="pricing__title color-1">99</span>
+                </h2>
+              </div>
+              <div class="mt-4">
+                <p>
+                  <span class="color-1 icon me-2">∎</span>100 GB Disk Space
+                </p>
+                <p>
+                  <span class="color-1 icon me-2">∎</span>5 Year Technical
+                  Support
+                </p>
+                <p><span class="color-1 icon me-2">∎</span>SQL Database</p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-color-1 rounded-pill position-absolute start-50 translate-middle-x">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq py-4 bg-color-7 position-relative" id="faq">
+    <div class="container py-0 py-sm-5 my-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title-box text-center">
+            <h6 class="color-6 opacity-75 fw-2">
+              quickly find the help you need
+            </h6>
+            <h2 class="mb-3 fs-2 fw-5 color-3">
+              Our
+              <span class="color-1 fw-2">Frequently Ask Question</span>
+              <br />
+              support center
+            </h2>
+            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+              consectetur adipisicing elit. Eius, praesentium, dignissimos
+              placeat ad fugiat illum iusto dolorum nobis fuga, ut nemo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center d-md-inherit">
+        <div class="col-lg-6">
+          <div class="accordion mt-5" id="accordionExample">
+            <div class="bg-color-7 position-relative collaps-2">
+              <div class="border border-color-8 bg-transparent rounded-8 mt-4">
+                <a data-bs-toggle="collapse" href="#collapse1"
+                  class="faq__toggle collapsed position-relative d-inline-block text-decoration-none color-3 fw-3 fs-5">
+                  <div class="bg-transparent border-none ms-3 p-4" id="heading1">
+                    <h5 class="mb-0 color-3">
+                      Pharetra convallis magna mattis?
+                    </h5>
+                  </div>
+                </a>
+                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                  <div class="faq__card-body ms-4 ps-5 mb-3 pt-1">
+                    <p class="mb-0 fs-6 color-6 opacity-75">
+                      Vulputate lobortis tincidunt porttitor massa morbi
+                      suscipit mollis luctus ullamcorper phasellus ante
+                      finibus facilisis .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-color-8 bg-transparent rounded-8 mt-4">
+                <a data-bs-toggle="collapse" href="#collapse2"
+                  class="faq__toggle collapsed position-relative d-inline-block text-decoration-none color-3 fw-3 fs-4">
+                  <div class="bg-transparent border-none ms-3 p-4" id="heading2">
+                    <h5 class="mb-0 color-3">
+                      Condimentum porttitor at magna?
+                    </h5>
+                  </div>
+                </a>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                  <div class="faq__card-body ms-4 opaci1y-100 ps-5 mb-3 pt-1">
+                    <p class="mb-0 fs-6 color-6 opacity-75">
+                      Quisque tincidunt the malesuada aliquet ullamcorper
+                      Suspendisse lectus congue iaculis vitae purus Nullam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-color-8 bg-transparent rounded-8 mt-4">
+                <a data-bs-toggle="collapse" href="#collapse3"
+                  class="faq__toggle collapsed position-relative d-inline-block text-decoration-none color-3 fw-3 fs-5">
+                  <div class="bg-transparent border-none ms-3 p-4" id="heading3">
+                    <h5 class="mb-0 color-3">
+                      Nullya lectus feugiat placerat?
+                    </h5>
+                  </div>
+                </a>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                  <div class="faq__card-body ms-4 opaci1y-100 ps-5 mb-3 pt-1">
+                    <p class="mb-0 fs-6 color-6 opacity-75">
+                      Pellentesque tincidunt imperdiet metus interdum ligula
+                      tristique aenean facilisis congue congue libero interdum
+                      venenatis scelerisque sed massa elit pulvinar gravida.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-color-8 bg-transparent rounded-8 mt-4">
+                <a data-bs-toggle="collapse" href="#collapse4"
+                  class="faq__toggle collapsed position-relative d-inline-block text-decoration-none color-3 fw-3 fs-5"
+                  aria-expanded="false" aria-controls="collapse4">
+                  <div class="bg-transparent border-none ms-3 p-4" id="heading4">
+                    <h5 class="mb-0 color-3">
+                      Manage catch one your coupens?
+                    </h5>
+                  </div>
+                </a>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                  <div class="faq__card-body ms-4 opaci1y-100 ps-5 mb-3 pt-1">
+                    <p class="mb-0 fs-6 color-6 opacity-75">
+                      Vestibulum sodales turpis vestibulum praesent
+                      consectetur magna tortor interdum neque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/faq/Questions.png" alt="image" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog py-4 bg-color-8" id="blog">
+    <div class="container py-0 py-sm-5 my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center">
+            <h6 class="color-6 opacity-75 fw-normal">Latest on Our Blogs</h6>
+            <h2 class="mb-3 color-3 fs-2 fw-5">
+              Increase <span class="color-1">conversion </span>with help our
+              images
+            </h2>
+            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+              ratione iure laborum, voluptatum iusto pariatur ipsa vero
+              debitis dolore, eaque natus, itaque perferendis eveniet
+              voluptatem omnis nemo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 mt-4 mt-2">
+          <div class="rounded-3 overflow-hidden">
+            <img src="images/blog/img-1.jpg" alt="image" class="img-fluid w-100 scale-110" />
+          </div>
+          <div class="mb-2">
+            <a href="">
+              <h6 class="mt-4 mb-2 fs-7 color-6 opacity-50 text-uppercase">
+                Health
+              </h6>
+            </a>
+            <a class="text-dark text-active" href="#1">
+              <h4>You need weightlose shoes?</h4>
+            </a>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
+              <img src="./images/common/person.svg" alt="image" />
+              <p class="mb-0 ms-2">Md Shohel</p>
+            </div>
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
+              <img src="./images/common/calendar.svg" alt="image" />
+              <p class="mb-0 ms-2">September 25 2021</p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="blog__read fs-6 fw-4 color-1">Read more
+              <img src="./images/common/arrow.svg" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-2">
+          <div class="rounded-3 overflow-hidden">
+            <img src="images/blog/img-2.jpg" alt="image" class="img-fluid w-100" />
+          </div>
+          <div class="mb-2">
+            <a href="">
+              <h6 class="mt-4 mb-2 text-uppercase fs-7 color-6 opacity-50">
+                food
+              </h6>
+            </a>
+            <a class="text-dark text-active" href="#2">
+              <h4>We Don't Mack It Until You Order It.</h4>
+            </a>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
+              <img src="./images/common/person.svg" alt="image" />
+              <p class="mb-0 ms-2">Md Shohel</p>
+            </div>
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
+              <img src="./images/common/calendar.svg" alt="image" />
+              <p class="mb-0 ms-2">october 16 2020</p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="blog__read fs-6 fw-4 color-1">Read more
+              <img src="./images/common/arrow.svg" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-2">
+          <div class="rounded-3 overflow-hidden">
+            <img src="images/blog/img-3.jpg" alt="image" class="img-fluid w-100" />
+          </div>
+          <div>
+            <a href="">
+              <h6 class="mt-4 lh-1 text-uppercase fs-7 color-6 opacity-50">
+                Fitness
+              </h6>
+            </a>
+            <a class="text-acitve" href="#3">
+              <h4 class="mt-3 text-dark text-active fw-bold">
+                Daily Workout With Fitness.
+              </h4>
+            </a>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
+              <img src="./images/common/person.svg" alt="image" />
+              <p class="mb-0 ms-2">Md Shohel</p>
+            </div>
+            <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
+              <img src="./images/common/calendar.svg" alt="image" />
+              <p class="mb-0 ms-2">october 16 2020</p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="blog__read fs-6 fw-4 color-1">Read more
+              <img src="./images/common/arrow.svg" alt="image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe py-4 bg-color-7" id="subscribe">
+    <div class="container py-0 py-sm-5 my-5 position-relative w-100" id="cta-footer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center">
+            <h2 class="fw-4 fs-1 color-3">
+              Sign up for our
+              <span class="color-1 fw-2">Newsletters</span>
+            </h2>
+            <p class="fs-6 fw-4 color-6 opacity-50 mt-4 mb-2">
+              Subscribe To Our Newsletter For New Content, Update And
+              Giveaways!
+            </p>
+            <p class="fs-6 fw-4 color-6 opacity-50">
+              Subscribe & get all related jobs notification.
+            </p>
             <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="client-slider text-center">
-                        <div>
-                            <img src="images/clients/logo1.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo2.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo3.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo4.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo5.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo6.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo7.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo8.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo9.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                        <div>
-                            <img src="images/clients/logo10.png" alt="" class="clients__logo w-14 img-fluid">
-                        </div>
-                    </div>
-                    <!--end client-slider-->
-                </div>
-                <!--end col-->
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-
-
-    <!-- start service -->
-    <section class="section bg-light" id="service">
-        <div class="container">
-            <div class="row justify-content-center mb-4 pb-2">
-                <div class="col-lg-6">
-                    <div class="heading text-center">
-                        <h6 class="text-muted f-16 fw-normal">Learning to Write as a Professional</h6>
-                        <h2 class="mb-3">Start <span class="text-primary fw-normal"> your project </span> with these
-                            <br> stunning pages.
-                        </h2>
-                        <p class="text-muted para-p mx-auto mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nulla veniam impedit hic, tempore esse voluptatum. </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="text-black text-center text-lg-start">
-                        <div class="service-image">
-                            <img src="images/service/img-1.png" alt="img-fluid">
-                        </div>
-                        <h5 class="fw-bold mt-4 mb-3">Customize Preferences</h5>
-                        <p>Learners are given the right to arrange and customize their study schedule and timetable
-                            based on preferences.</p>
-                        <div class="button-link mt-2">
-                            <a href="" class="f-14 fw-bold">Start hear <i
-                                    class="mdi mdi-arrow-right align-middle"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="text-black text-center text-lg-start">
-                        <div class="service-image">
-                            <img src="images/service/img-2.png" alt="img-fluid">
-                        </div>
-                        <h5 class="fw-bold mt-4 mb-3">Truly Multipurpose</h5>
-                        <p>Learners are given the right to arrange and customize their study schedule and timetable
-                            based on preferences.</p>
-                        <div class="button-link mt-2">
-                            <a href="" class="f-14 fw-bold">Get Free Quote <i
-                                    class="mdi mdi-arrow-right align-middle"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="text-black text-center text-lg-start">
-                        <div class="service-image">
-                            <img src="images/service/img-3.png" alt="img-fluid">
-                        </div>
-                        <h5 class="fw-bold mt-4 mb-3">Strategy Solutions</h5>
-                        <p>Learners are given the right to arrange and customize their study schedule and timetable
-                            based on preferences.</p>
-                        <div class="button-link mt-2">
-                            <a href="" class=" f-14 fw-bold">Start hear <i
-                                    class="mdi mdi-arrow-right align-middle"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end service -->
-
-    <!-- start features -->
-    <section class="feedback section" id="features">
-        <div class="container">
-            <div class="row align-items-center d-md-inherit" id="part1">
-                <div class="col-lg-7">
-                    <div class=" position-relative " id="sec-image">
-                        <div class=" overflow-hidden border-radius p-4 bg-white">
-                            <img src="images/features/img-1.png" alt="" class="features__image img-fluid">
-                        </div>
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <a href="#watchvideomodal" data-bs-toggle="modal">
-                                <img src="images/features/youtube.png" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
-                    <h6 class="text-muted fw-normal">Your profit <span class="fw-bold">grows & enjoy</span></h6>
-                    <h1 class="fw-bold mt-2">Get Awesome <span class="text-primary fw-normal">Companionship</span></h1>
-                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui, pariatur nulla,
-                        sint
-                        voluptatibus explicabo voluptates aliquid dolorem suscipit nostrum expedita itaque nesciunt
-                        autem ?</p>
-                    <div class="feedback__link mt-4">
-                        <a href="" class="py-1 position-relative text-decoration-none text-primary font-weight-600">
-                            Download free feedback <i class="mdi mdi-arrow-right text-primary"></i></a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="pt-5 mt-5" id="part2">
-                <div id="imgcontainer-2 ">
-                    <div id="inner-3">
-                        <div class="demo-img-2">
-                            <div class="w-100 py-3 opacity-0 bg-black">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center d-md-inherit">
-                    <div class="col-lg-4 order-2 order-lg-1 mt-5 mt-lg-0">
-                        <h6 class="text-muted fw-normal">Get started <span class="fw-bold">available
-                                courses</span>
-                        </h6>
-                        <h1 class="fw-bold mt-2">your success <span class="text-primary fw-normal">plan
-                                now!</span>
-                        </h1>
-                        <p class="mt-3"> Temporibus quasi adipisci eligendi quaerat iste debitis numquam
-                            deleniti labore
-                            corporis
-                            architecto, voluptas cupiditate distinctio?</p>
-                        <div class="feedback__link mt-4">
-                            <a href="" class="py-1 position-relative text-decoration-none text-primary font-weight-600">
-                                Download free feedback <i class="mdi mdi-arrow-right"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-7 offset-lg-1 order-1 order-lg-2">
-                        <div class=" position-relative cursor-pointer" id="sec-image-2">
-                            <div class="bg-img overflow-hidden border-radius p-4 bg-white">
-                                <img src="images/features/img-2.png" alt="" class="img-fluid">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="modal fade bd-example-modal-lg" id="watchvideomodal" data-keyboard="false" tabindex="-1"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
-                <div class="modal-content hero-modal-0 bg-transparent position-relative">
-                    <button type="button" class="model__close btn bg-white position-absolute opacity-0"
-                        data-bs-dismiss="modal" aria-label="Close">
+              <div class="col-lg-8">
+                <form class="mt-4" action="#">
+                  <div class="input-group justify-content-center">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com" />
+                    <button class="btn btn-sm btn-color-1" type="button" id="subscribebtn">
+                      Subscribe
                     </button>
-                    <video id="VisaChipCardVideo" class="w-100" controls="">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                        <!--Browser does not support <video> tag -->
-                    </video>
-                </div>
+                  </div>
+                  <p class="fs-6 color-6 mt-2">
+                    Please complete this required field.
+                  </p>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- end features -->
-
-
-    <!-- start testimonial -->
-    <section class="section bg-light position-relative" id="user">
-        <div class="container-fluid">
-            <div class="section-bottom-shape-two position-absolute top-0 start-100 translate-middle">
-                <img class="img-fluid" src="images/features/shape.png" alt="">
-            </div>
-            <div class="row position-absolute top-0 start-50 translate-middle-x justify-content-center d-md-inherit">
-                <div class="heading text-center w-100">
-                    <h6 class="text-muted f-16 fw-normal">Design Better Landing Pages For You</h6>
-                    <h2 class="mb-3 d-block">Better<span class="text-primary fw-normal"> communicate </span> and
-                        your
-                        moments.</h2>
-                    <p class="text-muted para-p mx-auto mb-0">Aperiam consequatur nostrum fuga eaque quos
-                        distinctio laboriosam <br> minima, magni eius delectus.</p>
-                </div>
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper-container pb-5 mt-5 ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide border-radius p-4 bg-white">
-                        <h5 class="mb-4 text-black">Join millions of users and grow business. what say about?</h5>
-                        <p class="f-16 text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Reprehenderit iure corporis corrupti eveniet eligendi vero nobis architecto praesentium.
-                        </p>
-                        <div class="d-flex align-items-center d-md-inherit mt-4 pt-3">
-                            <div class="flex-shrink-0">
-                                <div class="user-image">
-                                    <img src="images/users/img-1.jpg" alt="" class="avatar-lg rounded-circle">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3 ">
-                                <div class="user-info">
-                                    <h6 class="text-black">Janice C. Campbe</h6>
-                                    <p class="mb-0 text-muted">/ Embedded analytics</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide border-radius p-4 bg-white">
-                        <h5 class="mb-4 text-black">Collaborate with your team
-                            anytime anywhere.</h5>
-                        <p class="f-16 text-muted">Otrsr sed urna tellus porta curabitur eget tellus dictum
-                            consectetur
-                            velit a in ultricies leo praesent rutrum sit amet euismod nulla intdum lectus.</p>
-                        <div class="d-flex align-items-center d-md-inherit mt-4 pt-3">
-                            <div class="flex-shrink-0">
-                                <div class="user-image">
-                                    <img src="images/users/img-2.jpg" alt="" class="avatar-lg rounded-circle">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3 ">
-                                <div class="user-info">
-                                    <h6 class="text-black">Richard S. Drews</h6>
-                                    <p class="mb-0 text-muted">/ Manager</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide border-radius p-4 bg-white">
-                        <h5 class="mb-4 text-black">Become a part of Borial bussiness community today</h5>
-                        <p class="f-16 text-muted">Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                            nihil
-                            impedit quo minus id quod maxime .</p>
-                        <div class="d-flex align-items-center d-md-inherit mt-4 pt-3">
-                            <div class="flex-shrink-0">
-                                <div class="user-image">
-                                    <img src="images/users/img-3.jpg" alt="" class="avatar-lg rounded-circle">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3 ">
-                                <div class="user-info">
-                                    <h6 class="text-black">Willimore Wilson</h6>
-                                    <p class="mb-0 text-muted">/ Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide border-radius p-4 bg-white">
-                        <h5 class="mb-4 text-black">Become a part of Borial bussiness community today</h5>
-                        <p class="f-16 text-muted">I feel confident imposing change on myself. It's a lot more fun
-                            progressing than looking back. That's why scelerisque need throw curve balls.</p>
-                        <div class="d-flex align-items-center d-md-inherit mt-4 pt-3">
-                            <div class="flex-shrink-0">
-                                <div class="user-image">
-                                    <img src="images/users/img-4.jpg" alt="" class="avatar-lg rounded-circle">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3 ">
-                                <div class="user-info">
-                                    <h6 class="text-black">Brandon Carney</h6>
-                                    <p class="mb-0 text-muted">/ Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- navigation buttons -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-
-
-    <!-- start cta -->
-    <section class="bg-white position-relative w-100 section" id="cta-ani">
-        <div class="cta-image">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-                            <h5 class="text-muted ">A simple and smart design grow <span class="text-primary">your
-                                    business </span> </h5>
-                            <h2 class="mt-3 fw-bold">Our mission Ultimate features to Grow Your Business.</h2>
-                            <button class=" btn-lg btn-primary mt-4 f-14">Get started for free</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end cta -->
-    <!-- counter section-->
-    <section class="counter top-0 left-0 position-relative">
-        <div class="container  position-absolute top-0 start-50 translate-middle-x">
-            <div class="row" id="counter">
-                <div class="col-lg-3 p-lg-0">
-                    <div class="py-0 py-lg-5 text-center position-relative">
-                        <div class="counter__left d-lg-none d-block"></div>
-                        <div class="py-5 pb-0">
-                            <div class="counter-image">
-                                <img src="images/counter/support.png" alt="">
-                            </div>
-                            <h2 class="fs-2 fw-bold mt-2 text-primary" data-bs-target="1789">0</h2>
-                            <h5 class="counter-caption mb-0 mt-3">Awesome Support</h5>
-                        </div>
-                        <div class="counter__right"></div>
-                    </div>
-                </div>
-                <!-- end col -->
-                <div class="col-lg-3 p-lg-0">
-                    <div class="py-0 py-lg-5 text-center">
-                        <div class="py-5 pb-0">
-                            <img src="images/counter/project-running.png" alt="">
-                            <h2 class="fs-2 fw-bold mt-2 text-primary" data-bs-target="19">0</h2>
-                            <h5 class="counter-caption mb-0 mt-3">Project Running</h5>
-                        </div>
-                        <div class="counter__right"></div>
-                    </div>
-                </div>
-                <!-- end col -->
-                <div class="col-lg-3 p-lg-0">
-                    <div class="py-0 py-lg-5 text-center d-block d-lg-none">
-                        <div class="py-5 pb-0">
-                            <img src="images/counter/check.png" alt="">
-                            <h2 class="fs-2 fw-bold mt-2 text-primary" data-bs-target="24">0</h2>
-                            <h5 class="counter-caption mb-0 mt-3">Project Complate</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col -->
-                <div class="col-lg-3 p-lg-0">
-                    <div class="py-0 py-lg-5 text-center d-block d-lg-none">
-                        <div class="d-lg-none d-block"></div>
-                        <div class="py-5">
-                            <img src="images/counter/idea.png" alt="">
-                            <h2 class="fs-2 fw-bold mt-2 text-primary" data-bs-target="1090">0</h2>
-                            <h5 class="counter-caption mb-0 mt-3">Strategy Solution</h5>
-                        </div>
-                        <div class="counter__right"></div>
-                    </div>
-                </div>
-                <!-- end col -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end counter -->
-
-
-    <!-- pricing section -->
-    <section class="section bg-light" id="pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center">
-                        <h6 class="text-muted fw-normal">Get Your Best Package</h6>
-                        <h2 class="mb-3">Best <span class="text-primary fw-normal">Pricing</span> Package Start Business
-                        </h2>
-                        <p class="text-muted para-p mx-auto mb-0">Fugit, voluptatum. Cum earum reprehenderit quis,
-                            esse
-                            dolorem quaerat. Recusandae officiis facilis quia quidem iusto labore temporibus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center d-md-inherit">
-                <div class="col-lg-4">
-                    <div class="price-save-box bg-primary p-4 mt-5 border-radius p-4">
-                        <h2 class="text-white">Save your <br> <span class="fw-bold text-light">money now</span></h2>
-                        <p class="mt-3 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Temporibus nostrum nihil in nulla doloribus voluptatem.</p>
-                        <p class="mt-3 text-white-50">Esse facere reiciendis error necessitatibus eum sed recusandae.
-                        </p>
-                        <div class="price-image">
-                            <img src="images/pricing/investment.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius p-4 bg-white">
-                        <div class="text-center mb-4">
-                            <h6 class="text-primary">Wealth</h6>
-                            <div
-                                class="bg-light p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
-                                <div class="w-1 h-1 position-absolute bg-light tag left-50 bottom-0 mt-1"></div>
-                                <h6 class="mb-0 text-muted">basic</h6>
-                            </div>
-                            <div class="mt-4">
-                                <h2><sup>$</sup><span class="text-primary fs-2">0</span></h2>
-                            </div>
-                            <!-- <p class="text-muted mt-2">For small teams trying out Levonic <br> for an unlimited </p> -->
-
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>10 GB Disk Space</p>
-                                <p><span class="text-primary icon me-2">∎</span>1 Year Technical Support</p>
-                                <p><span class="text-primary icon me-2">∎</span>SQL Database</p>
-                            </div>
-
-                        </div>
-                        <button class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Get
-                            started</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius p-4 bg-white position-relative">
-                        <div class="text-center mb-4">
-                            <h6 class="text-primary">Combination</h6>
-                            <div
-                                class="bg-light p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
-                                <div class="w-1 h-1 position-absolute bg-light tag"></div>
-                                <h6 class="mb-0 text-muted">Premium</h6>
-                            </div>
-                            <div class="mt-4">
-                                <h2><sup>$</sup><span class="fs-2 text-primary">99</span></h2>
-                            </div>
-                            <!-- <p class="text-muted mt-2">For small teams trying out Levonic <br> for an unlimited </p> -->
-
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>100 GB Disk Space</p>
-                                <p><span class="text-primary icon me-2">∎</span>5 Year Technical Support</p>
-                                <p><span class="text-primary icon me-2">∎</span>SQL Database</p>
-                            </div>
-
-                        </div>
-                        <button class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Sign
-                            up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end pricing -->
-
-
-    <!-- start position-relative  -->
-    <section class="section position-relative" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-box text-center">
-                        <h6 class="text-muted fw-normal">quickly find the help you need</h6>
-                        <h2 class="mb-3">Our <span class="text-primary fw-normal">Frequently Ask Question</span> <br>
-                            support center </h2>
-                        <p class="text-muted para-p mx-auto mb-0">consectetur adipisicing elit. Eius, praesentium,
-                            dignissimos placeat ad fugiat illum iusto dolorum nobis fuga, ut nemo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center d-md-inherit">
-                <div class="col-lg-6">
-                    <div class="accordion mt-5" id="accordionExample">
-                        <div class="bg-white position-relative-collaps-2">
-                            <!-- start 1 -->
-                            <div class="border-light bg-transparent rounded-0 mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
-                                    <div class="bg-transparent border-none ms-3 p-4" id="heading1">
-                                        <h5 class="mb-0 text-muted">Pharetra convallis magna mattis?</h5>
-                                    </div>
-                                </a>
-                                <div id="collapse1" class="collapse show" aria-labelledby="heading1"
-                                    data-parent="#accordionExample">
-                                    <div class="border-start border-primary ms-4 opacity-100 ps-5 mb-3 pt-1">
-                                        <p class="mb-0 text-muted">Vulputate lobortis tincidunt porttitor massa
-                                            morbi
-                                            suscipit mollis luctus ullamcorper phasellus ante finibus facilisis
-                                            .</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end 1 -->
-
-
-                            <!-- start 2 -->
-                            <div class="border-light bg-transparent rounded-0 mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
-                                    <div class="bg-transparent border-none ms-3 p-4" id="heading2">
-                                        <h5 class="mb-0 text-muted">Condimentum porttitor at magna?</h5>
-                                    </div>
-                                </a>
-                                <div id="collapse2" class="collapse" aria-labelledby="heading2"
-                                    data-parent="#accordionExample">
-                                    <div class="border-start border-primary ms-4 opacity-100 ps-5 mb-3 pt-1">
-                                        <p class="mb-0 text-muted">Quisque tincidunt the malesuada aliquet
-                                            ullamcorper
-                                            Suspendisse lectus congue iaculis vitae purus Nullam.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end 2 -->
-
-                            <!-- start 3 -->
-
-                            <div class="border-light bg-transparent rounded-0 mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
-                                    <div class="bg-transparent border-none ms-3 p-4" id="heading3">
-                                        <h5 class="mb-0 text-muted">Nullya lectus feugiat placerat?</h5>
-                                    </div>
-                                </a>
-                                <div id="collapse3" class="collapse" aria-labelledby="heading3"
-                                    data-parent="#accordionExample">
-                                    <div class="border-start border-primary ms-4 opacity-100 ps-5 mb-3 pt-1">
-                                        <p class="mb-0 text-muted">Pellentesque tincidunt imperdiet metus interdum
-                                            ligula tristique aenean facilisis congue congue libero interdum venenatis
-                                            scelerisque sed massa elit pulvinar gravida.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end 3 -->
-
-                            <!-- start 4 -->
-                            <div class="border-light bg-transparent rounded-0 mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed"
-                                    aria-expanded="false" aria-controls="collapse4">
-                                    <div class="bg-transparent border-none ms-3 p-4" id="heading4">
-                                        <h5 class="mb-0 text-muted">Manage catch one your coupens?</h5>
-                                    </div>
-                                </a>
-                                <div id="collapse4" class="collapse" aria-labelledby="heading4"
-                                    data-parent="#accordionExample">
-                                    <div class="border-start border-primary ms-4 opacity-100 ps-5 mb-3 pt-1">
-                                        <p class="mb-0 text-muted">Vestibulum sodales turpis vestibulum praesent
-                                            consectetur magna tortor interdum neque. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end 4 -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/faq/Questions.png" alt="" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- end position-relative -->
-
-
-    <!-- start blog -->
-    <section class="section bg-light" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center">
-                        <h6 class="text-muted fw-normal">Latest on Our Blogs</h6>
-                        <h2 class="mb-3">Increase <span class="text-primary fw-normal">conversion </span>with help our
-                            images</h2>
-                        <p class="text-muted para-p mx-auto mb-0"> ratione iure laborum, voluptatum iusto pariatur
-                            ipsa
-                            vero debitis dolore, eaque natus, itaque perferendis eveniet voluptatem omnis nemo.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="rounded-3 overflow-hidden">
-                        <img src="images/blog/img-1.jpg" alt="" class="img-fluid w-100 hover:scale-110">
-                    </div>
-                    <div class="blog-content mb-2">
-                        <a href="">
-                            <h6 class="mt-4 mb-2 text-mutedtext-uppercase f-14 hover:text-primary">Health</h6>
-                        </a>
-                        <a href="">
-                            <h4 class="text-muted hover:text-primary">You need weightlose shoes?</h4>
-                        </a>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="d-flex align-items-center d-md-inherit text-muted">
-                            <i class="mdi mdi-account-outline f-22 "></i>
-                            <p class="mb-0 ms-2">Md Shohel</p>
-                        </div>
-                        <div class="d-flex align-items-center d-md-inherit text-muted ms-4">
-                            <i class="mdi mdi-calendar-blank f-22 "></i>
-                            <p class="mb-0 ms-2">September 25 2021</p>
-                        </div>
-                    </div>
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14 text-primary hover:text-muted">Read more <i
-                                class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="rounded-3 overflow-hidden">
-                        <img src="images/blog/img-2.jpg" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content mb-2">
-                        <a href="">
-                            <h6 class="mt-4 mb-2 text-uppercase f-14">food</h6>
-                        </a>
-                        <a href="">
-                            <h4>We Don't Mack It Until You Order It.</h4>
-                        </a>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="d-flex align-items-center d-md-inherit text-muted">
-                            <i class="mdi mdi-account-outline f-22 "></i>
-                            <p class="mb-0 ms-2">Md Shohel</p>
-                        </div>
-                        <div class="d-flex align-items-center d-md-inherit text-muted ms-4">
-                            <i class="mdi mdi-calendar-blank f-22 "></i>
-                            <p class="mb-0 ms-2">october 16 2020</p>
-                        </div>
-                    </div>
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Read more <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6  mt-4 mt-2">
-                    <div class="rounded-3 overflow-hidden">
-                        <img src="images/blog/img-3.jpg" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content">
-                        <a href="">
-                            <h6 class="mt-4 lh-1 text-uppercase f-14">Fitness</h6>
-                        </a>
-                        <a href="">
-                            <h4 class="mt-3 fw-bold">Daily Workout With Fitness.</h4>
-                        </a>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="d-flex align-items-center d-md-inherit text-muted">
-                            <i class="mdi mdi-account-outline f-22 "></i>
-                            <p class="mb-0 ms-2">Md Shohel</p>
-                        </div>
-                        <div class="d-flex align-items-center d-md-inherit text-muted ms-4">
-                            <i class="mdi mdi-calendar-blank f-22 "></i>
-                            <p class="mb-0 ms-2">october 16 2020</p>
-                        </div>
-                    </div>
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Read more <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="subscribe" class="section cta-2">
-        <div class="cta-image position-relative " id="cta-footer">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-                            <h2 class="fw-bold">Sign up for our <span class="text-primary fw-normal">Newsletters</span>
-                            </h2>
-                            <p class="f-16 cta-title mt-4 mb-2">Subscribe To Our Newsletter For New Content,
-                                Update And Giveaways!</p>
-                            <p class="f-16 cta-title">Subscribe & get all related jobs notification.</p>
-
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <form class="subscribe-form mt-4" action="#">
-                                        <div class="input-group justify-content-center">
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
-                                            <button class="btn btn-primary" type="button"
-                                                id="subscribebtn">Subscribe</button>
-                                        </div>
-                                        <p class="f-14 mt-2">Please complete this required field.</p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end cta -->
-
-
-    <!-- start footer -->
-    <section class="footer py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="fw-bold">
-                        <h5 class="text-black">Address</h5>
-                        <p class="mt-5 f-14 text-black">River Way behind Salt Lake City, UT 8402</p>
-                        <p class="mt-3 f-14 text-black">+(540)801-468-2313 (10am - 6pm, Monday - Saturday)</p>
-                        <a href="" class="f-14 text-black text-decoration-none">info@example.com</a>
-                    </div>
-                    <div class="d-flex mt-4 mb-4 mb-lg-0">
-                        <div class="facebook">
-                            <a class="footer_icon" href=""><i class="mdi mdi-facebook-box f-30"></i></a>
-                        </div>
-                        <div class="twitter ms-4">
-                            <a class="footer_icon" href=""><i class="mdi mdi-twitter f-30"></i></a>
-                        </div>
-                        <div class="twitter ms-4">
-                            <a class="footer_icon" href=""><i class="mdi mdi-instagram f-30"></i></a>
-                        </div>
-                        <div class="twitter ms-4">
-                            <a class="footer_icon" href=""><i class="mdi mdi-linkedin-box f-30"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <h5 class="text-black">Explore</h5>
-                    <ul class="list-unstyled row mt-5">
-                        <div class="col">
-                            <li class="mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Start here</a>
-                            </li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Services</a>
-                            </li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Features</a>
-                            </li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Client</a>
-                            </li>
-                        </div>
-                        <div class="col">
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Pricing</a>
-                            </li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">support
-                                    center</a></li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none" href="">Blogs</a>
-                            </li>
-                            <li class=" mb-3 fw-3"><a class="text-black fw-1 text-decoration-none"
-                                    href="">Newsletters</a>
-                            </li>
-                        </div>
-                    </ul>
-
-                </div>
-                <div class=" col-lg-2">
-                    <h5 class="text-black">Explore</h5>
-                    <ul class="footer__menu mt-5 list-unstyled d-block">
-                        <li class="mb-3 fw-3"><a href="" class="text-black fw-1 text-decoration-none">Membership</a>
-                        </li>
-                        <li class="mb-3 fw-3"><a href="" class="text-black fw-1 text-decoration-none">Purchase guide</a>
-                        </li>
-                        <li class="mb-3 fw-3"><a href="" class="text-black fw-1 text-decoration-none">Privacy policy</a>
-                        </li>
-                        <li class="mb-3 fw-3"><a href="" class="text-black fw-1 text-decoration-none">Terms of
-                                service</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end footer -->
-
-    <div class="bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="copy-right mb-5 text-center text-muted">
-                        <script>document.write(new Date().getFullYear())</script> <span class="fw-bold">Slima</span> .
-                        Design with <i class="mdi mdi-heart text-danger"></i> by <a
-                            href="https://themeforest.net/search/themesdesign" target="_blank"
-                            class="text-reset text-decoration-none"><span class="fw-bold">vmmscompany</span></a>.
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-
-
-    <!-- bootstrap -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/swiper.min.js"></script>
-
-    <!-- counter -->
-    <script src="js/counter.init.js"></script>
-
-    <!-- Custom -->
-    <script src="js/app.js"></script>
-
-    <script>
-            (function () {
-                // Add event listener
-                document.addEventListener("mousemove", parallax);
-                const elem = document.querySelector("#home-animation");
-                // Magic happens here
-                function parallax(e) {
-                    let _w = window.innerWidth / 2;
-                    let _h = window.innerHeight / 2;
-                    let _mouseX = e.clientX;
-                    let _mouseY = e.clientY;
-                    let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-                    let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-                    let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-                    let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-                    elem.style.backgroundPosition = x;
-                }
-
-            })();
-
-    </script>
-    <script>
-        (function () {
-            // Add event listener
-            document.addEventListener("mousemove", parallax);
-            const elem = document.querySelector("#ani-round");
-            // Magic happens here
-            function parallax(e) {
-                let _w = window.innerWidth / 2;
-                let _h = window.innerHeight / 2;
-                let _mouseX = e.clientX;
-                let _mouseY = e.clientY;
-                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-                let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-                let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-                elem.style.backgroundPosition = x;
-            }
-
-        })();
-
-    </script>
-
+  </section>
+  <section class="footer py-2 bg-color-8">
+    <div class="container py-0 py-sm-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="fw-4">
+            <h5 class="color-6 fw-3">Address</h5>
+            <p class="mt-5 fs-6 color-6 opacity-50">
+              River Way behind Salt Lake City, UT 8402
+            </p>
+            <p class="mt-3 fs-6 color-6 opacity-50">
+              +(540)801-468-2313 (10am - 6pm, Monday - Saturday)
+            </p>
+            <a href="" class="fs-6 color-6 text-decoration-none opacity-50">info@example.com</a>
+          </div>
+          <div class="d-flex mt-4 mb-4 mb-lg-0">
+            <div class="facebook">
+              <a class="color-6 opacity-50" href="">
+                <img src="./images/common/facebook.svg" alt="image" />
+              </a>
+            </div>
+            <div class="twitter ms-4">
+              <a class="color-6 opacity-50" href="">
+                <img src="./images/common/twitter.svg" alt="image" />
+              </a>
+            </div>
+            <div class="twitter ms-4">
+              <a class="color-6 opacity-50" href="">
+                <img src="./images/common/instagram.svg" alt="image" />
+              </a>
+            </div>
+            <div class="twitter ms-4">
+              <a class="color-6 opacity-50" href="">
+                <img src="./images/common/linkedin.svg" alt="image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="color-6 fw-3">Explore</h5>
+          <div class="list-unstyled row mt-5">
+            <ul class="col list-unstyled">
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Start here</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Services</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Features</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Client</a>
+              </li>
+            </ul>
+            <ul class="col list-unstyled">
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Pricing</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">support center</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Blogs</a>
+              </li>
+              <li class="mb-3 fw-3">
+                <a class="color-6 fw-4 opacity-50 text-decoration-none" href="">Newsletters</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="color-6 fw-3">Explore</h5>
+          <ul class="footer__menu mt-5 list-unstyled d-block">
+            <li class="mb-3 fw-3">
+              <a href="" class="color-6 fw-4 opacity-50 text-decoration-none">Membership</a>
+            </li>
+            <li class="mb-3 fw-3">
+              <a href="" class="color-6 fw-4 opacity-50 text-decoration-none">Purchase guide</a>
+            </li>
+            <li class="mb-3 fw-3">
+              <a href="" class="color-6 fw-4 opacity-50 text-decoration-none">Privacy policy</a>
+            </li>
+            <li class="mb-3 fw-3">
+              <a href="" class="color-6 fw-4 opacity-50 text-decoration-none">Terms of service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="author">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="copy-right mb-5 text-center color-6">
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Slima. Design with by
+            <a href="https://themeforest.net/search/themesdesign" target="_blank" class="text-reset">tuannd</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/swiper.min.js"></script>y
+  <script src="js/home-1.js"></script>
 </body>
 
 </html>
