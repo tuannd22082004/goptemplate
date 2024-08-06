@@ -65,6 +65,8 @@
   opacity: 0.3;
   transition: all 0.5s;
   cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .brands__slide:hover {
   opacity: 1;
@@ -89,6 +91,14 @@
 .testimonial__avatar {
   max-height: 4.5rem;
   max-width: 4.5rem;
+}
+.testimonial .swiper__message {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .testimonial .swiper-slide {
   opacity: 0.6;

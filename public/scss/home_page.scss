@@ -2,18 +2,22 @@
   &__background {
     background: url(/images/home/home-animation.png) no-repeat 50% 50%;
   }
+
   &__round {
     background: url(/images/home/round-h1.png) no-repeat 60% 50%;
   }
 }
+
 .features {
   &__link {
+
     &:before,
     &:after {
       position: absolute;
       -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
     }
+
     &:before {
       bottom: 0;
       display: block;
@@ -22,6 +26,7 @@
       content: '';
       background-color: var(--color-1);
     }
+
     &:after {
       left: 0;
       top: 0;
@@ -32,51 +37,64 @@
       max-width: 0%;
       overflow: hidden;
     }
+
     &:hover:before {
       opacity: 1;
       width: 100%;
     }
+
     &:hover:after {
       max-width: 100%;
     }
   }
+
   &__image {
     transition: all 2s;
+
     &:hover {
       transform: scale(1.1);
     }
   }
+
   &__background-container {
     height: 150%;
     top: -100px;
     perspective: 30px;
     left: -50px;
   }
+
   &__background-image {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+
     &--primary {
       background-image: url(/images/features/features-animation.png);
     }
+
     &--secondary {
       background-image: url(/images/features/home-animation-2.png);
     }
   }
+
   &__smooth {
     transition: transform 0.5s;
   }
 }
+
 .brands {
   &__slide {
     opacity: 0.3;
     transition: all 0.5s;
     cursor: pointer;
+    width: fit-content;
+
     &:hover {
       opacity: 1;
     }
   }
 }
+
 .service {
   &__clamp {
     display: -webkit-box;
@@ -87,28 +105,44 @@
     word-break: break-word;
   }
 }
+
 .modal {
   &__close {
     transition: all 0.3s ease-in-out;
+
     &:hover {
       opacity: 0.5;
     }
   }
 }
+
 .testimonial {
   &__avatar {
     max-height: 4.5rem;
     max-width: 4.5rem;
   }
+
   .swiper {
+    &__message {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+
     &-slide {
       opacity: 0.6;
+
       &-active {
         background-color: var(--color-5);
         opacity: 1;
       }
     }
+
     &-pagination {
+
       &-bullets,
       &-custom,
       &-fraction {
@@ -116,9 +150,11 @@
         left: 0;
         width: 100%;
       }
+
       &-bullet {
         width: 8px;
         height: 8px;
+
         &-active {
           opacity: 1;
           background: var(--color-6) !important;
@@ -130,19 +166,23 @@
     }
   }
 }
+
 .cta {
-    background: url(/images/cta/animation-image.png) no-repeat 50% 50%;
+  background: url(/images/cta/animation-image.png) no-repeat 50% 50%;
 }
+
 .counter {
   &__title {
     font-size: 3.5rem;
   }
 }
+
 .pricing {
   &__title {
     font-size: 3.5rem;
   }
 }
+
 .blog {
   &__read {
     &:hover {
@@ -151,6 +191,7 @@
     }
   }
 }
+
 .faq {
   &__toggle {
     &:before {
@@ -174,10 +215,12 @@
       content: '+';
     }
   }
+
   &__card-body {
     border-left: solid 2px var(--color-1);
   }
 }
+
 .subscribe {
   background: url(/images/cta/animation-image-2.png) no-repeat 50% 50%;
 }
