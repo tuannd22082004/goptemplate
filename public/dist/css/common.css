@@ -51,8 +51,8 @@ a:hover, a:focus, a:active, a.active {
   transition: all 0.5s ease-in-out;
 }
 .header__logo {
-  max-height: 50px;
-  max-width: 170px;
+  max-height: 40px;
+  max-width: 140px;
 }
 .header__nav-link {
   text-transform: uppercase;

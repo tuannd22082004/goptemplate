@@ -1,19 +1,10 @@
 .banner__background {
-  background-image: url(/images/home-animation.png?d9f7a228a6f877bcc3523005b0ac3b9f);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+  background: url(/images/home/home-animation.png) no-repeat 50% 50%;
 }
 .banner__round {
-  background-image: url(/images/round-h1.png?d790572420999b4e4c6210979ce8591d);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 60% 50%;
+  background: url(/images/home/round-h1.png) no-repeat 60% 50%;
 }
 
-.features__link {
-  letter-spacing: 1px;
-}
 .features__link:before, .features__link:after {
   position: absolute;
   transition: all 0.35s ease;
@@ -61,10 +52,10 @@
   z-index: -1;
 }
 .features__background-image--primary {
-  background-image: url(/images/features-animation.png?60e562a714bbd1a1fb98df49ba8414de);
+  background-image: url(/images/features/features-animation.png);
 }
 .features__background-image--secondary {
-  background-image: url(/images/home-animation-2.png?21b91815cb9c3fad50480d0350d58c65);
+  background-image: url(/images/features/home-animation-2.png);
 }
 .features__smooth {
   transition: transform 0.5s;
@@ -74,8 +65,6 @@
   opacity: 0.3;
   transition: all 0.5s;
   cursor: pointer;
-  max-width: 140px;
-  max-height: 140px;
 }
 .brands__slide:hover {
   opacity: 1;
@@ -126,10 +115,7 @@
 }
 
 .cta {
-  background-image: url(/images/animation-image.png?c67bfc537beacdd6e401bf3016efb11d);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+  background: url(/images/cta/animation-image.png) no-repeat 50% 50%;
 }
 
 .counter__title {
@@ -169,8 +155,5 @@
 }
 
 .subscribe {
-  background-image: url(/images/animation-image-2.png?93f9e5ccf5132283150c5bc400f78b4f);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+  background: url(/images/cta/animation-image-2.png) no-repeat 50% 50%;
 }

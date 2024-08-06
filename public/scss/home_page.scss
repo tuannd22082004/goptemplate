@@ -1,25 +1,18 @@
 .banner {
   &__background {
-    background-image: url(../images/home/home-animation.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 50% 50%;
+    background: url(/images/home/home-animation.png) no-repeat 50% 50%;
   }
   &__round {
-    background-image: url(../images/home/round-h1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 60% 50%;
+    background: url(/images/home/round-h1.png) no-repeat 60% 50%;
   }
 }
 .features {
   &__link {
-    letter-spacing: 1px;
     &:before,
     &:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
     }
     &:before {
       bottom: 0;
@@ -39,12 +32,12 @@
       max-width: 0%;
       overflow: hidden;
     }
-    &:hover:before{
+    &:hover:before {
       opacity: 1;
       width: 100%;
     }
     &:hover:after {
-    max-width: 100%;
+      max-width: 100%;
     }
   }
   &__image {
@@ -53,21 +46,21 @@
       transform: scale(1.1);
     }
   }
-  &__background-container{
-      height: 150%;
-      top: -100px;
-      perspective: 30px;
-      left: -50px;
+  &__background-container {
+    height: 150%;
+    top: -100px;
+    perspective: 30px;
+    left: -50px;
   }
   &__background-image {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
     &--primary {
-      background-image: url(../images/features/features-animation.png);
+      background-image: url(/images/features/features-animation.png);
     }
     &--secondary {
-      background-image: url(../images/features/home-animation-2.png);
+      background-image: url(/images/features/home-animation-2.png);
     }
   }
   &__smooth {
@@ -75,18 +68,16 @@
   }
 }
 .brands {
-  &__slide{
+  &__slide {
     opacity: 0.3;
     transition: all 0.5s;
     cursor: pointer;
-    max-width: 140px;
-    max-height: 140px;
-    &:hover{
-        opacity: 1;
+    &:hover {
+      opacity: 1;
     }
   }
 }
-.service{
+.service {
   &__clamp {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -140,10 +131,7 @@
   }
 }
 .cta {
-  background-image: url(../images/cta/animation-image.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+    background: url(/images/cta/animation-image.png) no-repeat 50% 50%;
 }
 .counter {
   &__title {
@@ -155,9 +143,9 @@
     font-size: 3.5rem;
   }
 }
-.blog{
-  &__read{
-    &:hover{
+.blog {
+  &__read {
+    &:hover {
       transition: all 0.3s ease-in-out;
       color: var(--color-3) !important;
     }
@@ -166,7 +154,7 @@
 .faq {
   &__toggle {
     &:before {
-      content: "-"; 
+      content: '-';
       width: 22px;
       height: 22px;
       color: var(--color-2);
@@ -183,7 +171,7 @@
     }
 
     &.collapsed:before {
-      content: "+";
+      content: '+';
     }
   }
   &__card-body {
@@ -191,8 +179,5 @@
   }
 }
 .subscribe {
-  background-image: url(../images/cta/animation-image-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+  background: url(/images/cta/animation-image-2.png) no-repeat 50% 50%;
 }

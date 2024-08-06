@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Responsive bootstrap landing template" />
   <meta name="author" content="Themesdesign" />
-  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
   <title>Slima | Responsive Bootstrap Landing Template</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.6/swiper-bundle.min.css" type="text/css" />
 
   <link href="dist/css/global.css" rel="stylesheet" />
   <link href="dist/css/common.css" rel="stylesheet" />
@@ -19,15 +20,15 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
-  <section class="header py-4 px-3 navbar navbar-expand-lg fixed-top" id="navbar">
+  <header class="header py-4 px-3 navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container-fluid">
       <a class="text-uppercase" href="index.html">
-        <img src="images/logo-dark.png" class="header__logo" alt="logo" />
+        <img src="./images/logo-dark.png" class="header__logo" alt="logo" />
       </a>
       <div class="list-inline d-flex d-md-inherit mb-0 order-1 order-lg-3">
         <div class="list-inline-item dropdown language me-4">
           <a href="#" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./images/common/language.svg" alt="language" />
+            <img class="img-fluid" src="/images/common/language.svg" alt="language" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
             <li>
@@ -38,16 +39,16 @@
             </li>
           </ul>
         </div>
-        <div class="Account">
+        <div>
           <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./images/common/user.svg" alt="image" />
+            <img class="img-fluid" src="/images/common/user.svg" alt="image" />
           </a>
         </div>
       </div>
       <button class="d-block d-lg-none my-0 me-3 order-2 ms-4 border-0 bg-transparent" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-label="Toggle navigation">
-        <img class="radio ratio-1x1" src="./images/common/align-justify.svg" alt="menu" />
+        <img class="radio ratio-1x1" src="/images/common/align-justify.svg" alt="menu" />
       </button>
       <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarCollapse">
         <ul class="navbar-nav mx-auto navbar-center">
@@ -82,7 +83,7 @@
         </ul>
       </div>
     </div>
-  </section>
+  </header>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -97,35 +98,35 @@
                 <span class="color-1">*</span>
               </label>
               <input type="text" class="form-control" id="validationCustom01" value="" required />
-              <div class="valid-features">Looks good!</div>
+              <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-md-6">
               <label for="validationCustom02" class="form-label">Email
                 <span class="color-1">*</span>
               </label>
               <input type="email" class="form-control" id="validationCustom02" value="" required />
-              <div class="valid-features">Looks good!</div>
+              <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-md-6">
               <label for="validationCustom03" class="form-label">Subject
                 <span class="color-1">*</span>
               </label>
               <input type="text" class="form-control" id="validationCustom03" required />
-              <div class="invalid-features">Please provide a valid city.</div>
+              <div class="invalid-feedback">Please provide a valid city.</div>
             </div>
             <div class="col-md-6">
               <label for="validationCustom05" class="form-label">Password
                 <span class="color-1">*</span>
               </label>
               <input type="password" class="form-control" id="validationCustom05" required />
-              <div class="invalid-features">Please provide a valid zip.</div>
+              <div class="valid-feedback">Please provide a valid zip.</div>
             </div>
             <div class="col-lg-12">
               <label for="validationTextarea" class="form-label">Textarea
                 <span class="color-1">*</span>
               </label>
               <textarea class="form-control" id="validationTextarea" required></textarea>
-              <div class="invalid-features">
+              <div class="valid-feedback">
                 You must agree before submitting.
               </div>
             </div>
@@ -153,14 +154,14 @@
               voluptate.
             </p>
             <button class="btn btn-lg btn-color-1">
-              <img src="./images/home/home-5/cloud_download.svg" alt="image" />
+              <img class="img-fluid" src="/images/home/home-5/cloud_download.svg" alt="image" />
               Download free guide
             </button>
             <div class="py-1 fs-7 fw-4 position-relative mt-4">
               <a href="#">
                 <span class="color-6 opacity-75">Have questions?</span>
                 <span class="color-1">Get Free From
-                  <img src="./images/common/arrow.svg" alt="image" />
+                  <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
                 </span>
               </a>
             </div>
@@ -168,7 +169,7 @@
           <div class="col-lg-6 mt-5">
             <div class="banner__background text">
               <div class="mt-5 mt-lg-0 ms-lg-5 position-relative">
-                <img src="images/home/home-bg.png" alt="image" class="banner__image img-fluid" />
+                <img src="/images/home/home-bg.png" alt="image" class="banner__image img-fluid" />
               </div>
             </div>
           </div>
@@ -183,34 +184,54 @@
           <div class="brands__swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo1.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo1.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo2.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo2.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo3.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo3.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo4.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo4.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo5.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo5.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo6.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo6.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo7.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo7.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo8.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo8.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo9.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo9.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
               <div class="brands__slide swiper-slide">
-                <img src="images/clients/logo10.png" alt="image" class="img-fluid" />
+                <div class="ratio ratio-16x9">
+                  <img src="/images/clients/logo10.png" alt="image" class="w-100 h-100 object-fit-contain" />
+                </div>
               </div>
             </div>
           </div>
@@ -244,7 +265,7 @@
         <div class="col-lg-4 mt-4 pt-2">
           <div class="text-center text-lg-start">
             <div>
-              <img src="images/service/img-1.png" alt="img-fluid" />
+              <img src="/images/service/img-1.png" alt="img-fluid" />
             </div>
             <h5 class="fw-5 mt-4 mb-3 color-3">Customize Preferences</h5>
             <p class="color-3 service__clamp">
@@ -253,7 +274,7 @@
             </p>
             <div class="mt-2">
               <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
-                <img src="./images/common/arrow_black.svg" alt="image" />
+                <img src="/images/common/arrow_black.svg" alt="image" />
               </a>
             </div>
           </div>
@@ -261,7 +282,7 @@
         <div class="col-lg-4 mt-4 pt-2">
           <div class="text-center text-lg-start">
             <div>
-              <img src="images/service/img-2.png" alt="img-fluid" />
+              <img src="/images/service/img-2.png" alt="img-fluid" />
             </div>
             <h5 class="fw-5 mt-4 mb-3 color-3">Truly Multipurpose</h5>
             <p class="color-3 service__clamp">
@@ -270,7 +291,7 @@
             </p>
             <div class="mt-2">
               <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
-                <img src="./images/common/arrow_black.svg" alt="image" />
+                <img src="/images/common/arrow_black.svg" alt="image" />
               </a>
             </div>
           </div>
@@ -278,7 +299,7 @@
         <div class="col-lg-4 mt-4 pt-2">
           <div class="text-center text-lg-start">
             <div>
-              <img src="images/service/img-3.png" alt="img-fluid" />
+              <img src="/images/service/img-3.png" alt="img-fluid" />
             </div>
             <h5 class="fw-5 mt-4 mb-3 color-3">Strategy Solutions</h5>
             <p class="color-3 service__clamp">
@@ -287,7 +308,7 @@
             </p>
             <div class="mt-2">
               <a href="" class="color-6 fs-7 fw-6 opacity-50">Start hear
-                <img src="./images/common/arrow_black.svg" alt="image" />
+                <img src="/images/common/arrow_black.svg" alt="image" />
               </a>
             </div>
           </div>
@@ -301,12 +322,12 @@
         <div class="col-lg-7">
           <div class="position-relative z-3" id="sec-image">
             <div class="overflow-hidden rounded-6">
-              <img src="images/features/img-1.png" alt="image"
+              <img src="/images/features/img-1.png" alt="image"
                 class="features__image position-relative h-auto z-3 img-fluid" />
             </div>
             <div class="position-absolute top-50 start-50 translate-middle">
               <a href="#watchvideomodal" data-bs-toggle="modal">
-                <img src="images/features/youtube.png" alt="image" class="img-fluid" />
+                <img src="/images/features/youtube.png" alt="image" class="img-fluid" />
               </a>
             </div>
             <div class="features__background-container position-absolute z-1 w-100">
@@ -333,7 +354,7 @@
           <div class="mt-4">
             <a href="" class="features__link py-1 position-relative text-decoration-none color-1 fw-4">
               Download free feedback
-              <img src="./images/common/arrow.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
             </a>
           </div>
         </div>
@@ -356,14 +377,14 @@
           <div class="position-relative py-1 mt-4">
             <a href="" class="features__link py-1 position-relative text-decoration-none color-1 fw-4">
               Download free feedback
-              <img src="./images/common/arrow.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
             </a>
           </div>
         </div>
         <div class="col-lg-7 offset-lg-1 order-1 order-lg-2">
           <div class="position-relative" id="sec-image-2">
             <div class="overflow-hidden rounded-6 position-relative z-3">
-              <img src="images/features/img-2.png" alt="image" class="img-fluid features__image" />
+              <img src="/images/features/img-2.png" alt="image" class="img-fluid features__image" />
             </div>
             <div class="features__background-container position-absolute z-1 w-100">
               <div class="features__smooth w-100 h-100 overflow-hidden rounded-6 bg-transparent" id="inner-secondary">
@@ -390,7 +411,7 @@
   <section class="testimonial bg-color-8 py-4 position-relative" id="user">
     <div class="container-fluid py-0 py-sm-5 my-5">
       <div class="position-absolute bottom-100 end-0 z-0 d-none d-lg-block">
-        <img src="images/features/shape.png" alt="image" class="img-fluid" />
+        <img src="/images/features/shape.png" alt="image" class="img-fluid" />
       </div>
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-8">
@@ -402,7 +423,7 @@
               Better <span class="color-1 fw-2"> communicate </span> and your
               moments.
             </h2>
-            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+            <p class="color-6 opacity-75 mx-auto mb-0">
               Aperiam consequatur nostrum fuga eaque quos distinctio
               laboriosam <br />
               minima, magni eius delectus.
@@ -412,8 +433,7 @@
       </div>
       <div class="testimonial__swiper swiper-container mt-5 pb-5">
         <div class="swiper-wrapper">
-          <div
-            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+          <div class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5">
             <h5 class="mb-4 color-6">
               Join millions of users and grow business. what say about?
             </h5>
@@ -425,7 +445,7 @@
             <div class="d-flex align-items-center mt-4 pt-3">
               <div class="flex-shrink-0">
                 <div>
-                  <img src="images/users/img-1.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                  <img src="/images/users/img-1.jpg" alt="image" class="testimonial__avatar rounded-circle" />
                 </div>
               </div>
               <div class="flex-grow-1 ms-3">
@@ -438,8 +458,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+          <div class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5">
             <h5 class="mb-4 color-6">
               Collaborate with your team anytime anywhere.
             </h5>
@@ -451,7 +470,7 @@
             <div class="d-flex align-items-center mt-4 pt-3">
               <div class="flex-shrink-0">
                 <div>
-                  <img src="images/users/img-2.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                  <img src="/images/users/img-2.jpg" alt="image" class="testimonial__avatar rounded-circle" />
                 </div>
               </div>
               <div class="flex-grow-1 ms-3">
@@ -462,8 +481,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+          <div class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5">
             <h5 class="mb-4 color-6">
               Become a part of Borial bussiness community today
             </h5>
@@ -474,7 +492,7 @@
             <div class="d-flex align-items-center mt-4 pt-3">
               <div class="flex-shrink-0">
                 <div>
-                  <img src="images/users/img-3.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                  <img src="/images/users/img-3.jpg" alt="image" class="testimonial__avatar rounded-circle" />
                 </div>
               </div>
               <div class="flex-grow-1 ms-3">
@@ -485,8 +503,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5 rounded-fill">
+          <div class="swiper-slide text-start bg-color-5 fs-5 justify-content-center align-items-center p-5">
             <h5 class="mb-4 color-6">
               Become a part of Borial bussiness community today
             </h5>
@@ -498,7 +515,7 @@
             <div class="d-flex align-items-center mt-4 pt-3">
               <div class="flex-shrink-0">
                 <div>
-                  <img src="images/users/img-4.jpg" alt="image" class="testimonial__avatar rounded-circle" />
+                  <img src="/images/users/img-4.jpg" alt="image" class="testimonial__avatar rounded-circle" />
                 </div>
               </div>
               <div class="flex-grow-1 ms-3">
@@ -539,38 +556,41 @@
       <div class="row" id="counter">
         <div class="col-lg-3 p-lg-0">
           <div class="position-relative h-100 py-0 py-lg-5 text-center">
-            <div class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            <div
+              class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
             </div>
             <div class="py-5 pb-0">
               <div>
-                <img src="images/counter/support.png" alt="image" class="img-fluid" />
+                <img src="/images/counter/support.png" alt="image" class="img-fluid" />
               </div>
               <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="1789">
                 0
               </h2>
               <h5 class="mb-0 mt-3">Awesome Support</h5>
             </div>
-            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            <div
+              class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
             </div>
           </div>
         </div>
         <div class="col-lg-3 p-lg-0">
           <div class="position-relative h-100 py-0 py-lg-5 text-center">
             <div class="py-5 pb-0">
-              <img src="images/counter/project-running.png" alt="image" class="img-fluid" />
+              <img src="/images/counter/project-running.png" alt="image" class="img-fluid" />
               <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="19">
                 0
               </h2>
               <h5 class="mb-0 mt-3">Project Running</h5>
             </div>
-            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            <div
+              class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
             </div>
           </div>
         </div>
         <div class="col-lg-3 p-lg-0">
           <div class="position-relative h-100 py-0 py-lg-5 text-center">
             <div class="py-5 pb-0">
-              <img src="images/counter/check.png" alt="image" class="img-fluid" />
+              <img src="/images/counter/check.png" alt="image" class="img-fluid" />
               <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="24">
                 0
               </h2>
@@ -580,16 +600,18 @@
         </div>
         <div class="col-lg-3 p-lg-0">
           <div class="position-relative h-100 py-0 py-lg-5 text-center">
-            <div class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            <div
+              class="counter__border border-start border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
             </div>
             <div class="py-5">
-              <img src="images/counter/idea.png" alt="image" class="img-fluid" />
+              <img src="/images/counter/idea.png" alt="image" class="img-fluid" />
               <h2 class="counter__title fw-6 mt-2 color-1" data-bs-target="1090">
                 0
               </h2>
               <h5 class="mb-0 mt-3">Strategy Solution</h5>
             </div>
-            <div class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
+            <div
+              class="counter__border border-end border-color-6 d-none d-lg-block position-absolute top-0 start-0 bottom-0 end-0">
             </div>
           </div>
         </div>
@@ -606,7 +628,7 @@
               Best <span class="color-1 fw-2">Pricing</span> Package Start
               Business
             </h2>
-            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+            <p class="color-6 opacity-75 mx-auto mb-0">
               Fugit, voluptatum. Cum earum reprehenderit quis, esse dolorem
               quaerat. Recusandae officiis facilis quia quidem iusto labore
               temporibus.
@@ -630,7 +652,7 @@
               Esse facere reiciendis error necessitatibus eum sed recusandae.
             </p>
             <div class="price-image">
-              <img src="images/pricing/investment.png" alt="image" class="img-fluid" />
+              <img src="/images/pricing/investment.png" alt="image" class="img-fluid" />
             </div>
           </div>
         </div>
@@ -639,7 +661,7 @@
             <div class="text-center mb-4">
               <h6 class="color-1 fw-4">Wealth</h6>
               <div
-                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
+                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-3 mt-2">
                 <div class="w-1 h-1 position-absolute tag left-50 bottom-0 mt-1"></div>
                 <h6 class="mb-0 color-4">basic</h6>
               </div>
@@ -670,7 +692,7 @@
             <div class="text-center mb-4">
               <h6 class="color-1 fw-4">Combination</h6>
               <div
-                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-index-1000 mt-2">
+                class="bg-color-6 opacity-25 color-5 p-2 px-4 d-inline-block rounded-pill position-relative z-3 mt-2">
                 <div class="w-1 h-1 position-absolute tag"></div>
                 <h6 class="mb-0 color-4">Premium</h6>
               </div>
@@ -713,7 +735,7 @@
               <br />
               support center
             </h2>
-            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+            <p class="color-6 opacity-75 mx-auto mb-0">
               consectetur adipisicing elit. Eius, praesentium, dignissimos
               placeat ad fugiat illum iusto dolorum nobis fuga, ut nemo.
             </p>
@@ -803,7 +825,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="images/faq/Questions.png" alt="image" class="img-fluid" />
+          <img src="/images/faq/Questions.png" alt="image" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -818,7 +840,7 @@
               Increase <span class="color-1">conversion </span>with help our
               images
             </h2>
-            <p class="color-6 opacity-75 para-p mx-auto mb-0">
+            <p class="color-6 opacity-75 mx-auto mb-0">
               ratione iure laborum, voluptatum iusto pariatur ipsa vero
               debitis dolore, eaque natus, itaque perferendis eveniet
               voluptatem omnis nemo.
@@ -829,7 +851,7 @@
       <div class="row mt-5">
         <div class="col-lg-4 col-md-6 mt-4 mt-2">
           <div class="rounded-3 overflow-hidden">
-            <img src="images/blog/img-1.jpg" alt="image" class="img-fluid w-100 scale-110" />
+            <img src="/images/blog/img-1.jpg" alt="image" class="img-fluid w-100 scale-110" />
           </div>
           <div class="mb-2">
             <a href="">
@@ -843,23 +865,23 @@
           </div>
           <div class="d-flex mb-3">
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
-              <img src="./images/common/person.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/person.svg" alt="image" />
               <p class="mb-0 ms-2">Md Shohel</p>
             </div>
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
-              <img src="./images/common/calendar.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/calendar.svg" alt="image" />
               <p class="mb-0 ms-2">September 25 2021</p>
             </div>
           </div>
           <div>
             <a href="" class="blog__read fs-6 fw-4 color-1">Read more
-              <img src="./images/common/arrow.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mt-4 mt-2">
           <div class="rounded-3 overflow-hidden">
-            <img src="images/blog/img-2.jpg" alt="image" class="img-fluid w-100" />
+            <img src="/images/blog/img-2.jpg" alt="image" class="img-fluid" />
           </div>
           <div class="mb-2">
             <a href="">
@@ -873,23 +895,23 @@
           </div>
           <div class="d-flex mb-3">
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
-              <img src="./images/common/person.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/person.svg" alt="image" />
               <p class="mb-0 ms-2">Md Shohel</p>
             </div>
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
-              <img src="./images/common/calendar.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/calendar.svg" alt="image" />
               <p class="mb-0 ms-2">october 16 2020</p>
             </div>
           </div>
           <div>
             <a href="" class="blog__read fs-6 fw-4 color-1">Read more
-              <img src="./images/common/arrow.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mt-4 mt-2">
           <div class="rounded-3 overflow-hidden">
-            <img src="images/blog/img-3.jpg" alt="image" class="img-fluid w-100" />
+            <img src="/images/blog/img-3.jpg" alt="image" class="img-fluid" />
           </div>
           <div>
             <a href="">
@@ -905,17 +927,17 @@
           </div>
           <div class="d-flex mb-3">
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75">
-              <img src="./images/common/person.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/person.svg" alt="image" />
               <p class="mb-0 ms-2">Md Shohel</p>
             </div>
             <div class="d-flex align-items-center d-md-inherit color-6 opacity-75 ms-4">
-              <img src="./images/common/calendar.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/calendar.svg" alt="image" />
               <p class="mb-0 ms-2">october 16 2020</p>
             </div>
           </div>
           <div>
             <a href="" class="blog__read fs-6 fw-4 color-1">Read more
-              <img src="./images/common/arrow.svg" alt="image" />
+              <img class="img-fluid" src="/images/common/arrow.svg" alt="image" />
             </a>
           </div>
         </div>
@@ -959,7 +981,7 @@
       </div>
     </div>
   </section>
-  <section class="footer py-2 bg-color-8">
+  <footer class="footer py-2 bg-color-8">
     <div class="container py-0 py-sm-5">
       <div class="row">
         <div class="col-lg-6">
@@ -974,24 +996,24 @@
             <a href="" class="fs-6 color-6 text-decoration-none opacity-50">info@example.com</a>
           </div>
           <div class="d-flex mt-4 mb-4 mb-lg-0">
-            <div class="facebook">
+            <div>
               <a class="color-6 opacity-50" href="">
-                <img src="./images/common/facebook.svg" alt="image" />
+                <img class="img-fluid" src="/images/common/facebook.svg" alt="image" />
               </a>
             </div>
-            <div class="twitter ms-4">
+            <div class="ms-4">
               <a class="color-6 opacity-50" href="">
-                <img src="./images/common/twitter.svg" alt="image" />
+                <img class="img-fluid" src="/images/common/twitter.svg" alt="image" />
               </a>
             </div>
-            <div class="twitter ms-4">
+            <div class="ms-4">
               <a class="color-6 opacity-50" href="">
-                <img src="./images/common/instagram.svg" alt="image" />
+                <img class="img-fluid" src="/images/common/instagram.svg" alt="image" />
               </a>
             </div>
-            <div class="twitter ms-4">
+            <div class="ms-4">
               <a class="color-6 opacity-50" href="">
-                <img src="./images/common/linkedin.svg" alt="image" />
+                <img class="img-fluid" src="/images/common/linkedin.svg" alt="image" />
               </a>
             </div>
           </div>
@@ -1048,7 +1070,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <section class="author">
     <div class="container">
       <div class="row justify-content-center">
@@ -1058,15 +1080,17 @@
               document.write(new Date().getFullYear());
             </script>
             Slima. Design with by
-            <a href="https://themeforest.net/search/themesdesign" target="_blank" class="text-reset">tuannd</a>.
+            <a href="https://webpress.vn/" target="_blank" class="text-reset">Vmms company</a>.
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/swiper.min.js"></script>y
   <script src="js/home-1.js"></script>
 </body>
 
