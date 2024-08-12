@@ -1,3 +1,7 @@
 .login {
   min-height: 100vh;
+  background: url(/images/log-in/bg.png) no-repeat center;
+}
+.login__content {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
