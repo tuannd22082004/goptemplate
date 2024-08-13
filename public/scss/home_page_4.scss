@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap");
 .banner {
   height: 100vh;
   background-image: url(../images/home/home-3.png);
@@ -23,100 +22,219 @@
     right: 6px;
   }
 }
-.feedback {
+.features {
   &__link {
+
     &:before,
     &:after {
       position: absolute;
+      -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
     }
+
     &:before {
       bottom: 0;
       display: block;
-      height: 1px;
+      height: 1.5px;
       width: 0%;
-      content: "";
-      background-color: var(--primary);
+      content: '';
+      background-color: var(--color-1);
     }
+
     &:after {
       left: 0;
       top: 0;
       position: absolute;
       content: attr(data-hover);
-      color: #ffffff;
+      color: var(--color-2);
       white-space: nowrap;
       max-width: 0%;
       overflow: hidden;
     }
+
+    &:hover:before {
+      opacity: 1;
+      width: 100%;
+    }
+
+    &:hover:after {
+      max-width: 100%;
+    }
   }
+
   &__image {
     transition: all 2s;
+
     &:hover {
       transform: scale(1.1);
     }
   }
+
+  &__background-container {
+    height: 150%;
+    top: -100px;
+    perspective: 30px;
+    left: -50px;
+  }
+
   &__background-image {
-    &-1 {
-      background-image: url(../images/features/features-animation.png);
-      background-size: cover;
-      background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    &--primary {
+      background-image: url(/images/features/features-animation.png);
     }
-    &-2 {
-      background-image: url(../images/features/home-animation-2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
+
+    &--secondary {
+      background-image: url(/images/features/home-animation-2.png);
     }
   }
+
+  &__smooth {
+    transition: transform 0.5s;
+  }
 }
-.clients {
-  &__logo {
+
+.brands {
+  &__slide {
+    opacity: 0.3;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: fit-content;
+
     &:hover {
       opacity: 1;
     }
   }
 }
+
+.service {
+  &__clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+}
+
 .modal {
   &__close {
     transition: all 0.3s ease-in-out;
+
     &:hover {
       opacity: 0.5;
     }
   }
 }
-.review {
-  &__shape {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    z-index: 0;
+
+.testimonial {
+  &__avatar {
+    max-height: 4.5rem;
+    max-width: 4.5rem;
   }
-}
-.counter .side-border-left {
-  &__left {
-    &::after {
-      content: "";
-      border-left: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
+
+  .swiper {
+    &__message {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
     }
-  }
-  &__right {
-    &::before {
-      content: "";
-      border-right: 1px dashed rgba(157, 157, 157, 0.2);
-      height: 400px;
+
+    &-slide {
+      opacity: 0.6;
+
+      &-active {
+        background-color: var(--color-5);
+        opacity: 1;
+      }
+    }
+
+    &-pagination {
+
+      &-bullets,
+      &-custom,
+      &-fraction {
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+      }
+
+      &-bullet {
+        width: 8px;
+        height: 8px;
+
+        &-active {
+          opacity: 1;
+          background: var(--color-6) !important;
+          width: 12px;
+          height: 12px;
+          vertical-align: middle !important;
+        }
+      }
     }
   }
 }
 
-#cta-ani {
-  background-image: url(../images/cta/animation-image.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+.cta {
+  background: url(/images/cta/animation-image.png) no-repeat 50% 50%;
 }
-#cta-footer {
-  background-image: url(../images/cta/animation-image-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
+
+.counter {
+  &__title {
+    font-size: 3.5rem;
+  }
+}
+
+.pricing {
+  &__title {
+    font-size: 3.5rem;
+  }
+}
+
+.blog {
+  &__read {
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      color: var(--color-3) !important;
+    }
+  }
+}
+
+.faq {
+  &__toggle {
+    &:before {
+      content: '-';
+      width: 22px;
+      height: 22px;
+      color: var(--color-2);
+      border-radius: 50%;
+      background: var(--color-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.collapsed:before {
+      content: '+';
+    }
+  }
+
+  &__card-body {
+    border-left: solid 2px var(--color-1);
+  }
+}
+
+.subscribe {
+  background: url(/images/cta/animation-image-2.png) no-repeat 50% 50%;
 }
