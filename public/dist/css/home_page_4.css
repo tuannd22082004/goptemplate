@@ -1,25 +1,30 @@
+@keyframes ani-bg {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
 .banner {
   height: 100vh;
-  background-image: url(/images/home-3.png?8f2d3e9a64f92ff7f6fec6ac35996298);
-  background-position: center;
+}
+.banner__image {
+  background: url(/images/home/home-3.png) center;
   background-size: cover;
 }
 .banner__title {
   font-size: 50px;
-  color: var(--dark);
 }
 .banner__overlay-image {
-  background-image: url(/images/bg-4.png?fbaf6e2e5677fade71ab39cfb25bd97c);
-  background-position: center;
+  background: url(/images/home/bg-4.png) center;
   animation: ani-bg 3s infinite alternate;
 }
 .banner__input {
   outline: none !important;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
 }
 .banner__button {
-  top: 5px;
   right: 6px;
 }
 
