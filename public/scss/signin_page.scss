@@ -1,9 +1,7 @@
 .signin {
   min-height: 100vh;
-}
-
-@media (min-width: 992px) and (max-width: 1440px) {
-  .sign-in {
-    max-width: 220% !important;
+  background: url(/images/log-in/signin.png) center;
+  &__content {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   }
 }
