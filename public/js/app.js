@@ -38,3 +38,4 @@ var TxtType = function (el, toRotate, period) {
   this.tick();
   this.isDeleting = false;
 };
+require('./home-1')

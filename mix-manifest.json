@@ -1,4 +1,5 @@
 {
+    "/public/dist/js/app.js": "/public/dist/js/app.js",
     "/public/dist/css/common.css": "/public/dist/css/common.css",
     "/public/dist/css/home_page.css": "/public/dist/css/home_page.css",
     "/public/dist/css/global.css": "/public/dist/css/global.css"
